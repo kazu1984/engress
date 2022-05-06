@@ -1,16 +1,34 @@
 <?php
 
 // ------------------------------------------------
+// テーマのセットアップ
+// ------------------------------------------------
+function my_theme_setup()
+{
+  add_theme_support('post-thumbnails');
+  add_theme_support('title-tag');
+  add_theme_support('wp-block-styles');
+  add_theme_support(
+    'html5',
+    array(
+      'search-form',
+      'comment-form',
+      'comment-list',
+      'gallery',
+      'caption',
+    )
+  );
+}
+add_action('after_setup_theme', 'my_theme_setup');
+
+
+// ------------------------------------------------
 // css、js、fontの読み込み
 // ------------------------------------------------
 function my_script_init()
 {
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "1.0.1");
-
-  // google font
-  wp_enqueue_style('NotoSans', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
-  wp_enqueue_style('Lexend', '//fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap');
 
   // js
   wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/common.js?20220101', array('jquery'), '1.0.1', true);
@@ -42,12 +60,6 @@ add_filter(
 
 
 // ------------------------------------------------
-// ブロックエディタ対応
-// ------------------------------------------------
-add_theme_support('wp-block-styles');
-
-
-// ------------------------------------------------
 // wordpress更新通知を管理者権限のみに表示
 // ------------------------------------------------
 function update_nag_admin_only()
@@ -59,10 +71,6 @@ function update_nag_admin_only()
 add_action('admin_init', 'update_nag_admin_only');
 
 
-// ------------------------------------------------
-// アイキャッチ有効化
-// ------------------------------------------------
-add_theme_support('post-thumbnails');
 
 // ------------------------------------------------
 // デフォルトアイキャッチの設定
@@ -91,12 +99,6 @@ function get_eyecatch_alt()
   }
   return $thumbnail_alt;
 }
-
-
-// ------------------------------------------------
-// titleタグの自動生成
-// ------------------------------------------------
-add_theme_support('title-tag');
 
 
 // ------------------------------------------------
@@ -149,4 +151,3 @@ function my_add_remove_admin_menus()
  * 投稿の自動整形を無効（ダブルクオーテーションなど）
  */
 add_filter('run_wptexturize', '__return_false');
-
