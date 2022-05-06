@@ -9,10 +9,10 @@ html {
 }
 @media screen and (min-width: 768px), print {
   html {
-    font-size: 1.4545454545vw;
+    font-size: 1.7777777778vw;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
   html {
     font-size: 16px;
   }
@@ -20,9 +20,10 @@ html {
 
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  color: #333;
+  color: #1B224C;
   background-color: #fff;
   letter-spacing: 0.05em;
+  line-height: 1.68;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +550,7 @@ th {
 }
 @media screen and (min-width: 768px), print {
   .l-inner {
-    max-width: 1150px;
+    max-width: 950px;
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -582,7 +583,7 @@ th {
   width: 2.1875rem;
   height: 2px;
   height: 0.125rem;
-  background-color: #333;
+  background-color: #1B224C;
   -webkit-transition: inherit;
   transition: inherit;
 }
@@ -616,7 +617,7 @@ th {
 .c-hamburger[aria-expanded=true] .c-hamburger__line::before,
 .c-hamburger[aria-expanded=true] .c-hamburger__line::after {
   top: 0;
-  background-color: #333;
+  background-color: #1B224C;
 }
 
 .c-hamburger[aria-expanded=true] .c-hamburger__line::before {
@@ -627,6 +628,37 @@ th {
 .c-hamburger[aria-expanded=true] .c-hamburger__line::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.c-section-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px), print {
+  .c-section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 768px), print {
+  .c-section-title--small {
+    font-size: 2rem;
+  }
+}
+
+.c-section-title--large {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+@media screen and (min-width: 768px), print {
+  .c-section-title--large {
+    font-size: 3rem;
+  }
+}
+
+.c-section-title--white {
+  color: #fff;
 }
 
 .u-desktop {

@@ -1,0 +1,26 @@
+@use "setting" as *;
+
+.c-section-title {
+  font-size: rem(24);
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(36);
+  }
+}
+
+.c-section-title--small {
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.c-section-title--large {
+  font-size: rem(28);
+  @include mq("md") {
+    font-size: rem(48);
+  }
+}
+
+.c-section-title--white {
+  color: $color-base-font-second;
+}
