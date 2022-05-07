@@ -1,0 +1,21 @@
+@use "setting" as *;
+
+.p-cta {
+  background-image: url(../images/common/cta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-cta__inner {
+  text-align: center;
+  padding: rem(53) 0 rem(27);
+}
+
+.p-cta__button {
+  margin-top: rem(16);
+}
+
+.p-cta__link {
+  margin-top: rem(22);
+}

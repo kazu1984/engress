@@ -1,0 +1,31 @@
+@use "setting" as *;
+
+.p-tel-contact__inner {
+  text-align: center;
+  line-height: 1;
+  @include mq("md") {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.p-tel-contact__inner > *:not(:first-child) {
+  margin-top: rem(15);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(20);
+  }
+}
+
+.tel-contact__text {
+  font-weight: $bold;
+  @include mq("md") {
+    margin-left: rem(35);
+  }
+}
+
+.tel-contact__number {
+  font-size: rem(36);
+  font-weight: $bold;
+  line-height: 0.8;
+}

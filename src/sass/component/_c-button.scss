@@ -2,4 +2,36 @@
 
 .c-button {
   display: inline-block;
+  width: rem(142);
+  padding: rem(17) 0;
+  text-align: center;
+  color: $color-base-font-second;
+  background-color: $color-button-background;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.c-button--blue {
+  background-color: $color-button-background--blue;
+}
+
+.c-button--large {
+  width: rem(260);
+  padding: rem(22) 0;
+  border-radius: 31px;
+}
+
+.c-button--wide {
+  width: rem(280);
+  border-radius: 25px;
+}
+
+// ------------------------------------
+// ホバー時のカラー
+// ------------------------------------
+.c-button::before {
+  background-color: $color-button-background-hover;
+}
+.c-button--blue::before {
+  background-color: $color-button-background--blue-hover;
 }

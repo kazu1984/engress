@@ -1,0 +1,9 @@
+@use "setting" as *;
+
+.c-link {
+  color: $color-base-font-second;
+}
+
+.c-link:hover {
+  text-decoration: underline;
+}

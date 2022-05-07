@@ -1,0 +1,27 @@
+@use "setting" as *;
+
+.c-slide-anime {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-slide-anime::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform $transition ease-in-out;
+}
+
+.c-slide-anime:hover::before {
+  transform: translateX(0);
+}
+
+.c-slide-anime span {
+  position: relative;
+  z-index: 1;
+}

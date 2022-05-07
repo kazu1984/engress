@@ -1,8 +1,18 @@
 // color
-$black: #1B224C;
+$blue: #1B224C;
+$blue-lite: #343c95;
 $white: #fff;
+$orange: #F5A623;
+$orange-lite: #f7be1f;
 
 // base
-$color-base-font: $black;
+$color-base-font: $blue;
 $color-base-font-second: $white;
 $color-base-background: $white;
+$color-base-background-second: $blue;
+
+// button
+$color-button-background: $orange;
+$color-button-background--blue: $blue;
+$color-button-background-hover: $orange-lite;
+$color-button-background--blue-hover: $blue-lite;
