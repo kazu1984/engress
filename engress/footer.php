@@ -5,16 +5,16 @@
     <div class="l-inner p-footer__inner">
       <ul class="p-footer__items">
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link">ホーム</a>
+          <a href="#" class="p-footer__link c-underline">ホーム</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link">お知らせ</a>
+          <a href="#" class="p-footer__link c-underline">お知らせ</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link">ブログ</a>
+          <a href="#" class="p-footer__link c-underline">ブログ</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link">コース・料金</a>
+          <a href="#" class="p-footer__link c-underline">コース・料金</a>
         </li>
       </ul>
       <div class="p-footer__contact">

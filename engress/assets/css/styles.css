@@ -750,6 +750,31 @@ th {
   z-index: 1;
 }
 
+.c-underline {
+  position: relative;
+}
+
+.c-underline::after {
+  background-color: #F5A623;
+  bottom: -5px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 0;
+}
+
+.c-underline:hover {
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.c-underline:hover::after {
+  width: 100%;
+}
+
 .p-cta {
   background-image: url(../images/common/cta.png);
   background-repeat: no-repeat;
@@ -840,10 +865,6 @@ th {
 
 .p-footer__link {
   display: block;
-}
-
-.p-footer__link:hover {
-  text-decoration: underline;
 }
 
 .p-footer__contact {
