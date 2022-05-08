@@ -1,0 +1,37 @@
+@use "setting" as *;
+
+.p-mv {
+  background-image: url(../images/top/mv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__inner {
+  text-align: center;
+  color: $color-base-font-second;
+  padding-top: rem(116);
+  padding-bottom: rem(86);
+}
+
+.p-mv__title {
+  font-size: rem(26);
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(48);
+  }
+}
+
+.p-mv__text {
+  font-size: rem(18);
+  margin-top: rem(25);
+  line-height: 1.72;
+}
+
+.p-mv__button {
+  margin-top: rem(51);
+}
+
+.p-mv__link {
+  margin-top: rem(22);
+}

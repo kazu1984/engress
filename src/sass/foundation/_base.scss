@@ -20,12 +20,8 @@ body {
   font-family: $base-font-family;
   color: $color-base-font;
   background-color: $color-base-background;
-  // background-color: $blue;
   letter-spacing: 0.05em;
   line-height: 1.68;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 body.fixed {

@@ -24,14 +24,6 @@ body {
   background-color: #fff;
   letter-spacing: 0.05em;
   line-height: 1.68;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
 }
 
 body.fixed {
@@ -541,6 +533,18 @@ th {
   font-weight: bold;
 }
 
+.l-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .l-footer {
   margin-top: 55px;
   margin-top: 3.4375rem;
@@ -750,16 +754,6 @@ th {
   }
 }
 
-.c-section-title--large {
-  font-size: 28px;
-  font-size: 1.75rem;
-}
-@media screen and (min-width: 768px), print {
-  .c-section-title--large {
-    font-size: 3rem;
-  }
-}
-
 .c-section-title--white {
   color: #fff;
 }
@@ -821,12 +815,11 @@ th {
 .p-drawer {
   visibility: hidden;
   position: fixed;
-  opacity: 0;
-  top: 80px;
   left: 0;
+  opacity: 0;
   width: 100%;
   max-width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   background-color: #fff;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -843,11 +836,9 @@ th {
 .p-drawer__items {
   overflow: scroll;
   width: 100%;
-  height: calc(100% - 80px);
-  margin: 44px auto 100px;
-  margin: 2.75rem auto 6.25rem;
-  padding: 10px 20px;
-  padding: 0.625rem 20px;
+  height: 100%;
+  padding: 60px 20px 150px;
+  padding: 3.75rem 20px 9.375rem;
 }
 
 .p-drawer__item {
@@ -1020,14 +1011,14 @@ th {
 }
 
 .p-header__inner {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 0 25px;
 }
 
@@ -1152,6 +1143,51 @@ th {
   .p-header__hamburger {
     display: none;
   }
+}
+
+.p-mv {
+  background-image: url(../images/top/mv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__inner {
+  text-align: center;
+  color: #fff;
+  padding-top: 116px;
+  padding-top: 7.25rem;
+  padding-bottom: 86px;
+  padding-bottom: 5.375rem;
+}
+
+.p-mv__title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px), print {
+  .p-mv__title {
+    font-size: 3rem;
+  }
+}
+
+.p-mv__text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 25px;
+  margin-top: 1.5625rem;
+  line-height: 1.72;
+}
+
+.p-mv__button {
+  margin-top: 51px;
+  margin-top: 3.1875rem;
+}
+
+.p-mv__link {
+  margin-top: 22px;
+  margin-top: 1.375rem;
 }
 
 .p-tel-contact__inner {
