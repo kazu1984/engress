@@ -5,21 +5,23 @@
     <div class="l-inner p-footer__inner">
       <ul class="p-footer__items">
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link c-underline">ホーム</a>
+          <a href="<?php echo esc_url(home_url()) ?>" class="c-menu-link">ホーム</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link c-underline">お知らせ</a>
+          <a href="#" class="c-menu-link">お知らせ</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link c-underline">ブログ</a>
+          <a href="#" class="c-menu-link">ブログ</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="p-footer__link c-underline">コース・料金</a>
+          <a href="#" class="c-menu-link">コース・料金</a>
         </li>
       </ul>
       <div class="p-footer__contact">
         <div class="p-footer__logo">
-          <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/common/logo02.png' ?>" alt="engressのロゴ">
+          <a href="<?php echo esc_url(home_url()) ?>">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/common/logo02.png' ?>" alt="engressのロゴ">
+          </a>
         </div>
         <div class="p-footer__tel">
           <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/common/tel02.png' ?>" alt="電話マーク">

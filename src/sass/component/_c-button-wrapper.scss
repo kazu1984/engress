@@ -1,0 +1,6 @@
+@use "setting" as *;
+
+// ボタンを囲む要素に隙間ができてしまうのをなくす
+.c-button-wrapper {
+  line-height: 1;
+}
