@@ -545,6 +545,11 @@ th {
   min-height: 100vh;
 }
 
+.l-flow {
+  margin-top: 57px;
+  margin-top: 3.5625rem;
+}
+
 .l-footer {
   margin-top: 55px;
   margin-top: 3.4375rem;
@@ -741,6 +746,7 @@ th {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
 }
 @media screen and (min-width: 768px), print {
   .c-section-title {
@@ -959,6 +965,99 @@ th {
 
 .p-drawer__link {
   display: block;
+}
+
+.p-flow__items {
+  margin-top: 53px;
+  margin-top: 3.3125rem;
+}
+
+.p-flow__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F8F8F8;
+}
+
+.p-flow__item + .p-flow__item {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+
+.p-flow__number {
+  display: block;
+  width: 64px;
+  width: 4rem;
+  height: 100%;
+  padding: 65px 0;
+  padding: 4.0625rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: #F5A623;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media screen and (min-width: 768px), print {
+  .p-flow__number {
+    padding: 1.1875rem 0;
+  }
+}
+
+.p-flow__contents {
+  width: 100%;
+  padding: 15px 21px;
+  padding: 0.9375rem 1.3125rem;
+}
+@media screen and (min-width: 768px), print {
+  .p-flow__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.p-flow__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: inline-block;
+}
+@media screen and (min-width: 768px), print {
+  .p-flow__title {
+    position: relative;
+    width: 23%;
+  }
+}
+
+.p-flow__title::after {
+  position: absolute;
+  content: "";
+  border-right: 1px solid #c3c3c3;
+  height: 29px;
+  height: 1.8125rem;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.p-flow__text {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px), print {
+  .p-flow__text {
+    margin-top: 0;
+    margin-left: 3.3125rem;
+    position: relative;
+  }
 }
 
 .p-footer__body {

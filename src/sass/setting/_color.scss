@@ -4,6 +4,8 @@ $blue-lite: #343c95;
 $white: #fff;
 $orange: #F5A623;
 $orange-lite: #f7be1f;
+$grey: #F8F8F8;
+$grey-lite: #c3c3c3;
 
 // base
 $color-base-font: $blue;
@@ -20,3 +22,8 @@ $color-button-background--blue-hover: $blue-lite;
 // text
 $color-text-underline: $orange;
 $color-text-merker: $orange;
+
+// flow
+$color-flow-number: $orange;
+$color-flow-background: $grey;
+$color-flow-line: $grey-lite;
