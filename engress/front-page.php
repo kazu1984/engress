@@ -15,6 +15,23 @@
     </div>
   </section>
 
+  <section class="p-copy">
+    <div class="l-inner p-copy__inner">
+      <h2 class="c-section-title c-section-title--white">TOEFL学習でこんな悩みありませんか？</h2>
+      <ul class="p-copy__worries">
+        <li class="p-copy__worry">勉強の習慣が<br class="u-br-pc">身についていない</li>
+        <li class="p-copy__worry">勉強しているはず<br class="u-br-pc">なのに点数が伸びない</li>
+        <li class="p-copy__worry">正しい勉強方法が<br class="u-br-pc">わからない</li>
+      </ul>
+      <div class="p-copy__box">
+        <div class="p-copy__box-inner">
+          <h3 class="p-copy__box-title">Engressは<br><span>TOEFLに特化したスクール</span>です</h3>
+          <p class="p-copy__box-text">完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br class="u-br-pc">TOEFLの苦手分野を克服します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="l-top-cta">
     <?php get_template_part('template-parts/template-cta', null); ?>
   </div>

@@ -1,0 +1,8 @@
+@use "setting" as *;
+
+.u-br-sp {
+  display: block;
+  @include mq("md") {
+    display: none;
+  }
+}

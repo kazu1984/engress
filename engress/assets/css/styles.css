@@ -789,6 +789,109 @@ th {
   z-index: 1;
 }
 
+.p-copy {
+  background-color: #1B224C;
+}
+.p-copy span {
+  display: inline-block;
+}
+
+.p-copy__inner {
+  text-align: center;
+  padding-top: 63px;
+  padding-top: 3.9375rem;
+  padding-bottom: 54px;
+  padding-bottom: 3.375rem;
+}
+
+.p-copy__worries {
+  margin-top: 65px;
+  margin-top: 4.0625rem;
+  color: #fff;
+}
+@media screen and (min-width: 768px), print {
+  .p-copy__worries {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.p-copy__worry {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  line-height: 2.16;
+}
+.p-copy__worry br {
+  display: none;
+}
+@media screen and (min-width: 768px), print {
+  .p-copy__worry br {
+    display: block;
+  }
+}
+
+.p-copy__worry:nth-child(2) {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px), print {
+  .p-copy__worry:nth-child(2) {
+    margin-left: 3.5625rem;
+  }
+}
+
+.p-copy__worry:nth-child(3) {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px), print {
+  .p-copy__worry:nth-child(3) {
+    margin-left: 1.875rem;
+  }
+}
+
+.p-copy__box {
+  margin-top: 83px;
+  margin-top: 5.1875rem;
+  padding: 11px 16px;
+  padding: 0.6875rem 1rem;
+  background-color: #fff;
+}
+
+.p-copy__box-inner {
+  padding: 20px;
+  padding: 1.25rem;
+  border: 5px solid #1B224C;
+}
+
+.p-copy__box-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+@media screen and (min-width: 768px), print {
+  .p-copy__box-title {
+    font-size: 2.25rem;
+  }
+}
+.p-copy__box-title span {
+  display: inline;
+  line-height: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #F5A623));
+  background: linear-gradient(transparent 70%, #F5A623 70%);
+}
+
+.p-copy__box-text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.72;
+  margin-top: 25px;
+  margin-top: 1.5625rem;
+}
+
 .p-cta {
   background-image: url(../images/common/cta.png);
   background-repeat: no-repeat;
@@ -1230,6 +1333,24 @@ th {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 0.8;
+}
+
+.u-br-pc {
+  display: none;
+}
+@media screen and (min-width: 768px), print {
+  .u-br-pc {
+    display: block;
+  }
+}
+
+.u-br-sp {
+  display: block;
+}
+@media screen and (min-width: 768px), print {
+  .u-br-sp {
+    display: none;
+  }
 }
 
 .u-desktop {

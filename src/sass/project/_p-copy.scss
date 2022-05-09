@@ -1,0 +1,81 @@
+@use "setting" as *;
+
+.p-copy {
+  background-color: $color-base-background-second;
+  span {
+    display: inline-block;
+  }
+}
+
+.p-copy__inner {
+  text-align: center;
+  padding-top: rem(63);
+  padding-bottom: rem(54);
+}
+
+.p-copy__worries {
+  margin-top: rem(65);
+  color: $color-base-font-second;
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.p-copy__worry {
+  margin-top: rem(15);
+  line-height: 2.16;
+  br {
+    display: none;
+  }
+  @include mq("md") {
+    br {
+      display: block
+    }
+  }
+}
+
+.p-copy__worry:nth-child(2) {
+  margin-left: 0;
+  @include mq("md") {
+    margin-left: rem(57);
+  }
+}
+
+.p-copy__worry:nth-child(3) {
+  margin-left: 0;
+  @include mq("md") {
+    margin-left: rem(30);
+  }
+}
+
+.p-copy__box {
+  margin-top: rem(83);
+  padding: rem(11) rem(16);
+  background-color: $color-base-background;
+}
+
+.p-copy__box-inner {
+  padding: rem(20);
+  border: 5px solid $blue;
+}
+
+.p-copy__box-title {
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: 1.38;
+  @include mq("md") {
+    font-size: rem(36);
+  }
+  span {
+    display: inline;
+    line-height: 1;
+    background: linear-gradient(transparent 70%, $color-text-merker 70%);
+  }
+}
+
+.p-copy__box-text {
+  font-size: rem(18);
+  line-height: 1.72;
+  margin-top: rem(25);
+}
