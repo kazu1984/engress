@@ -68,6 +68,31 @@
     </div>
   </section>
 
+  <section class="l-question p-question">
+    <div class="l-inner">
+      <h2 class="c-section-title">よくある質問</h2>
+      <ul class="p-question__items">
+        <li class="p-question__item">
+          <h3 class="p-question__title js_accordion">Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
+          <p class="p-question__answer js_answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
+        </li>
+        <li class="p-question__item">
+          <h3 class="p-question__title js_accordion">教材はオリジナルのものを使用しているのでしょうか？</h3>
+          <p class="p-question__answer js_answer">はい。engressでは独自の教材をご用意させて頂いております。</p>
+        </li>
+        <li class="p-question__item">
+          <h3 class="p-question__title js_accordion">講師に日本人はいますか？</h3>
+          <p class="p-question__answer js_answer">はい。日本人も複数人おります。</p>
+        </li>
+        <li class="p-question__item">
+          <h3 class="p-question__title js_accordion">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
+          <p class="p-question__answer js_answer">申し訳ございません。TOEFL以外のサポートは現在行っていません。申し訳ございません。TOEFL以外のサポートは現在行っていません。申し訳ございません。TOEFL</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
   <div class="l-top-cta">
     <?php get_template_part('template-parts/template-cta', null); ?>
   </div>

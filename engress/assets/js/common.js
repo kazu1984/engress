@@ -4,16 +4,30 @@ jQuery(function ($) {
    */
   $(".js-hamburger").click(function () {
     $("body").toggleClass("fixed");
-    
+
     if ($(this).attr("aria-expanded") == "false") {
       $(this).attr("aria-expanded", true);
       $(".js-drawer").attr("aria-hidden", false);
-      $(".js-drawer").attr("data-click",true);
+      $(".js-drawer").attr("data-click", true);
     } else {
       $(this).attr("aria-expanded", false);
       $(".js-drawer").attr("aria-hidden", true);
-      $(".js-drawer").attr("data-click",false);
+      $(".js-drawer").attr("data-click", false);
     }
+  });
+
+  /**
+   * アコーディオン クリック時
+   */
+  $(window).on("load", function () {
+    $(".js_answer").each(function (index, element) {
+      const height = element.scrollHeight;
+      element.style.setProperty("--max-height", height + "px");
+    });
+  });
+  $(".js_accordion").on("click", function () {
+    $(this).toggleClass("is_active");
+    $(this).next().toggleClass("is_open");
   });
 
   /**
