@@ -1,0 +1,33 @@
+@use "setting" as *;
+
+.p-price__inner {
+  text-align: center;
+}
+
+.p-price__bg {
+  width: 100%;
+  background-image: url(../images/top/price.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-price__content {
+  padding: rem(55) rem(20) rem(47);
+}
+
+.p-price__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $color-base-font-second;
+  span {
+    display: inline-block;
+  }
+  @include mq("md") {
+    font-size: rem(26);
+  }
+}
+
+.p-price__button {
+  margin-top: rem(18);
+}

@@ -584,6 +584,11 @@ th {
   }
 }
 
+.l-price {
+  margin-top: 93px;
+  margin-top: 5.8125rem;
+}
+
 .l-question {
   margin-top: 75px;
   margin-top: 4.6875rem;
@@ -610,6 +615,7 @@ th {
   padding: 17px 0;
   padding: 1.0625rem 0;
   text-align: center;
+  font-weight: 600;
   color: #fff;
   background-color: #F5A623;
   border-radius: 5px;
@@ -634,12 +640,25 @@ th {
   border-radius: 25px;
 }
 
+.c-button--transparent {
+  width: 200px;
+  width: 12.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
 .c-button::before {
   background-color: #f7be1f;
 }
 
 .c-button--blue::before {
   background-color: #343c95;
+}
+
+.c-button--transparent::before {
+  background-color: #c3c3c3;
 }
 
 .c-hamburger {
@@ -1048,14 +1067,13 @@ th {
   font-size: 1.25rem;
   font-weight: 600;
   color: #fff;
-  padding: 10px;
-  padding: 0.625rem;
+  padding: 20px;
+  padding: 1.25rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 600px), print {
   .p-feature__title {
     font-size: 1.375rem;
-    padding: 1.25rem;
   }
 }
 @media screen and (min-width: 768px), print {
@@ -1071,13 +1089,8 @@ th {
   font-size: 14px;
   font-size: 0.875rem;
   color: #fff;
-  padding: 0 10px 10px;
-  padding: 0 0.625rem 0.625rem;
-}
-@media screen and (min-width: 600px), print {
-  .p-feature__text {
-    padding: 0 1.25rem 1.25rem;
-  }
+  padding: 0 20px 20px;
+  padding: 0 1.25rem 1.25rem;
 }
 @media screen and (min-width: 768px), print {
   .p-feature__text {
@@ -1566,6 +1579,43 @@ th {
 .p-mv__link {
   margin-top: 22px;
   margin-top: 1.375rem;
+}
+
+.p-price__inner {
+  text-align: center;
+}
+
+.p-price__bg {
+  width: 100%;
+  background-image: url(../images/top/price.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-price__content {
+  padding: 55px 20px 47px;
+  padding: 3.4375rem 1.25rem 2.9375rem;
+}
+
+.p-price__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+.p-price__title span {
+  display: inline-block;
+}
+@media screen and (min-width: 768px), print {
+  .p-price__title {
+    font-size: 1.625rem;
+  }
+}
+
+.p-price__button {
+  margin-top: 18px;
+  margin-top: 1.125rem;
 }
 
 .p-question__items {

@@ -5,6 +5,7 @@
   width: rem(142);
   padding: rem(17) 0;
   text-align: center;
+  font-weight: $bold;
   color: $color-base-font-second;
   background-color: $color-button-background;
   border-radius: 5px;
@@ -26,6 +27,14 @@
   border-radius: 25px;
 }
 
+.c-button--transparent {
+  width: rem(200);
+  color: $color-base-font-second;
+  background-color: transparent;
+  border: 1px solid $color-base-background;
+  border-radius: 30px;
+}
+
 // ------------------------------------
 // ホバー時のカラー
 // ------------------------------------
@@ -34,4 +43,7 @@
 }
 .c-button--blue::before {
   background-color: $color-button-background--blue-hover;
+}
+.c-button--transparent::before {
+  background-color: $color-button-background--transparent-hover;
 }
