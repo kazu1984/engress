@@ -4,6 +4,11 @@
   font-size: rem(24);
   font-weight: $bold;
   text-align: center;
+
+  span {
+    display: inline-block;
+  }
+
   @include mq("md") {
     font-size: rem(36);
   }
