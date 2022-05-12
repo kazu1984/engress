@@ -14,7 +14,7 @@
           <a href="#" class="c-menu-link">ブログ</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="c-menu-link">コース・料金</a>
+          <a href="<?php echo esc_url(home_url('plan')) ?>" class="c-menu-link">コース・料金</a>
         </li>
       </ul>
       <div class="p-footer__contact">

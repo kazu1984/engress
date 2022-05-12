@@ -77,7 +77,7 @@
         <div class="p-price__content">
           <h3 class="p-price__title">Engressの料金プランは<span>こちら</span></h3>
           <div class="p-price__button c-button-wrapper">
-            <a href="#" class="c-button c-button--transparent c-slide-anime"><span>料金を見てみる</span></a>
+            <a href="<?php echo esc_url(home_url('plan')) ?>" class="c-button c-button--transparent c-slide-anime"><span>料金を見てみる</span></a>
           </div>
         </div>
       </div>

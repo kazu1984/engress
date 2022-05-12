@@ -1,0 +1,89 @@
+@use "setting" as *;
+
+
+.p-fee-list__items {
+  display: flex;
+  gap: rem(6);
+  text-align: center;
+  margin-top: rem(106);
+}
+
+.p-fee-list__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.p-fee-list__head {
+  font-weight: $bold;
+  color: $color-base-font-second;
+  background-color: $color-base-background-second;
+  padding: rem(22) 0;
+  line-height: 1;
+}
+
+.p-fee-list__head--pickup {
+  background-color: $color-list-pickup;
+  position: relative;
+}
+
+.p-fee-list__head--pickup::before {
+  position: absolute;
+  display: block;
+  content: "おすすめ";
+  width: 100%;
+  top: -30px;
+  padding: 20px 0;
+  background-color: $color-list-pickup;
+}
+
+.p-fee-list__body {
+  border: 0.5px solid rgba($color-base-background-second, 0.5);
+  border-top: none;
+  padding-top: rem(30);
+  padding-bottom: rem(95);
+  flex-grow: 1;
+}
+
+.p-fee-list__price {
+  font-size: rem(25);
+  font-weight: $bold;
+}
+
+.p-fee-list__benefits {
+  text-align: left;
+  margin-top: rem(48);
+  max-inline-size: max-content;
+  margin-inline: auto;
+  padding: 0 rem(20) 0 rem(40);
+}
+
+.p-fee-list__benefit {
+  position: relative;
+}
+
+.p-fee-list__benefit::before {
+  position: absolute;
+  content: "";
+  width: rem(14);
+  height: rem(9);
+  border-left: 3px solid #1b224c;
+  border-bottom: 3px solid #1b224c;
+  transform: rotate(-45deg);
+  top: rem(6);
+  left: rem(-25);
+}
+
+.p-fee-list__benefit--asterisk::before {
+  content: "＊";
+  border: none;
+  transform: rotate(0);
+  top: 0;
+}
+
+
+
+.p-fee-list__benefit + .p-fee-list__benefit {
+  margin-top: rem(17);
+}
