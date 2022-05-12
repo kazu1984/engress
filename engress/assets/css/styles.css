@@ -532,6 +532,15 @@ th {
   font-weight: bold;
 }
 
+.l-case {
+  margin-top: 39px;
+  margin-top: 2.4375rem;
+  padding-top: 58px;
+  padding-top: 3.625rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+
 .l-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,6 +835,122 @@ th {
   z-index: 1;
 }
 
+.p-case {
+  background-color: #1B224C;
+}
+
+.p-case__items {
+  margin-top: 57px;
+  margin-top: 3.5625rem;
+}
+@media screen and (min-width: 600px), print {
+  .p-case__items {
+    max-width: 34.375rem;
+    margin: 3.5625rem auto 0;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .p-case__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.875rem;
+    max-width: 100%;
+    margin-top: 8.5625rem;
+  }
+}
+
+.p-case__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px), print {
+  .p-case__item {
+    width: 31.12%;
+  }
+}
+
+.p-case__item + .p-case__item {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px), print {
+  .p-case__item + .p-case__item {
+    margin-top: 0;
+  }
+}
+
+.p-case__title {
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.p-case__img {
+  position: relative;
+  background-color: #fff;
+  margin-top: 9px;
+  margin-top: 0.5625rem;
+  overflow: hidden;
+}
+
+.p-case__img::before {
+  content: "";
+  display: block;
+  padding-top: 61.07%;
+}
+
+.p-case__img img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 49.28%;
+}
+
+.p-case__job,
+.p-case__name,
+.p-case__result {
+  display: block;
+  line-height: 1;
+  padding: 8px 10px;
+  padding: 0.5rem 0.625rem;
+  background-color: #fff;
+}
+
+.p-case__job-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+.p-case__job {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35.715%;
+          flex: 0 0 35.715%;
+  letter-spacing: 0;
+}
+
+.p-case__name {
+  width: 100%;
+  margin-left: 8px;
+  margin-left: 0.5rem;
+}
+
+.p-case__result {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
 .p-copy {
   background-color: #1B224C;
 }
@@ -1109,6 +1234,7 @@ th {
 .p-feature__img {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px), print {
   .p-feature__img {
@@ -1153,7 +1279,6 @@ th {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
 }
 
 .p-flow__items {

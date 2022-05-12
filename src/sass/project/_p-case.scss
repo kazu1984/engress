@@ -1,0 +1,88 @@
+@use "setting" as *;
+
+.p-case {
+  background-color: $color-base-background-second;
+}
+
+.p-case__items {
+  margin-top: rem(57);
+  @include mq("sm") {
+    max-width: rem(550);
+    margin: rem(57) auto 0;
+  }
+  @include mq("md") {
+    display: flex;
+    gap: rem(30);
+    max-width: 100%;
+    margin-top: rem(137);
+  }
+}
+
+.p-case__item {
+  display: flex;
+  flex-direction: column;
+  @include mq("md") {
+    width: 31.12%;
+  }
+}
+
+.p-case__item + .p-case__item {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.p-case__title {
+  color: $color-base-font-second;
+  flex-grow: 1;
+}
+
+.p-case__img {
+  position: relative;
+  background-color: $color-base-background;
+  margin-top: rem(9);
+  overflow: hidden;
+}
+
+.p-case__img::before {
+  content: "";
+  display: block;
+  padding-top: 61.07%;
+}
+
+.p-case__img img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 49.28%;
+}
+
+.p-case__job,
+.p-case__name,
+.p-case__result {
+  display: block;
+  line-height: 1;
+  padding: rem(8) rem(10);
+  background-color: $color-base-background;
+}
+
+.p-case__job-name {
+  display: flex;
+  margin-top: rem(16);
+}
+
+.p-case__job {
+  flex: 0 0 35.715%;
+  letter-spacing: 0;
+}
+
+.p-case__name {
+  width: 100%;
+  margin-left: rem(8);
+}
+
+.p-case__result {
+  margin-top: rem(10);
+}

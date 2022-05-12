@@ -63,6 +63,7 @@
             <p class="p-feature__text">Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。</p>
           </div>
           <figure class="p-feature__img">
+            <!-- <img src="https://placehold.jp/3d4070/ffffff/550x1500.png" alt=""> -->
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/top/feature03.jpg" alt="engressの特徴画像">
           </figure>
         </li>
@@ -82,6 +83,31 @@
       </div>
     </div>
   </div>
+
+  <section class="l-case p-case">
+    <div class="l-inner">
+      <h2 class="c-section-title c-section-title--white">TOEFL成功事例</h2>
+      <?php
+      $id = get_page_by_path('case')->ID;
+      $field_cnt = 5;
+      ?>
+      <ul class="p-case__items">
+        <?php for ($i = 1; $i <= count(get_fields($id)) / $field_cnt; $i++) { ?>
+          <li class="p-case__item">
+            <h3 class="p-case__title"><?php the_field('title' . $i, $id); ?></h3>
+            <div class="p-case__img">
+              <img src="<?php the_field('image' . $i, $id); ?>" alt="成功事例者の顔写真">
+            </div>
+            <div class="p-case__job-name">
+              <span class="p-case__job"><?php the_field('job' . $i, $id); ?></span>
+              <span class="p-case__name"><?php the_field('name' . $i, $id); ?></span>
+            </div>
+            <p class="p-case__result"><?php the_field('result' . $i, $id); ?></p>
+          </li>
+        <?php } ?>
+      </ul>
+    </div>
+  </section>
 
   <section class="l-flow p-flow">
     <div class="l-inner">
