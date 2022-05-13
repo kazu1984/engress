@@ -1,5 +1,3 @@
-<?php wp_footer(); ?>
-
 <footer class="l-footer p-footer">
   <div class="p-footer__body">
     <div class="l-inner p-footer__inner">
@@ -40,7 +38,7 @@
 
 </div>
 <!-- l-container end -->
-
+<?php wp_footer(); ?>
 </body>
 
 </html>

@@ -30,6 +30,10 @@ function my_script_init()
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "1.0.1");
 
+  // scroll-hint
+  wp_enqueue_style('scroll-hint', '//unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), '1.0.1', false);
+  wp_enqueue_script('scroll-hint', '//unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js', array(), '1.0.1', true);
+
   // js
   wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/common.js?20220101', array('jquery'), '1.0.1', true);
 

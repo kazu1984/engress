@@ -1309,6 +1309,8 @@ th {
 
 .p-fee-list__item {
   width: 100%;
+  min-width: 220px;
+  min-width: 13.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
