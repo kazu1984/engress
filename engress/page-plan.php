@@ -4,6 +4,8 @@
   <h1 class="p-page-header__title">コース・料金</h1>
 </div>
 
+<?php get_template_part('template-parts/breadcrumb') ?>
+
 <main>
   <section class="l-fee-system p-fee-system">
     <div class="l-inner">

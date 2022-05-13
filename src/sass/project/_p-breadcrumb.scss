@@ -1,0 +1,11 @@
+@use "setting" as *;
+
+.p-breadcrumb {
+  background-color: $color-breadcrumb-background;
+}
+
+.p-breadcrumb__inner {
+  padding: rem(19) 0;
+  font-size: rem(12);
+  line-height: 1;
+}
