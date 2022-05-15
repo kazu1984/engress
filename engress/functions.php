@@ -155,3 +155,63 @@ function my_add_remove_admin_menus()
  * 投稿の自動整形を無効（ダブルクオーテーションなど）
  */
 add_filter('run_wptexturize', '__return_false');
+
+
+/**
+ * mw-wp-formではビジュアルエディタを非表示
+ */
+function disable_visual_editor_in_page()
+{
+  global $typenow;
+  if ($typenow == 'mw-wp-form') {
+    add_filter('user_can_richedit', 'disable_visual_editor_filter');
+  }
+}
+function disable_visual_editor_filter()
+{
+  return false;
+}
+add_action('load-post.php', 'disable_visual_editor_in_page');
+add_action('load-post-new.php', 'disable_visual_editor_in_page');
+
+
+/**
+ * お問合せフォームのエラーメッセージ変更
+ */
+function my_error_message($error, $key, $rule)
+{
+  if ($key === 'company' && $rule === 'noempty') {
+    return '会社名が入力されていません';
+  }
+  if ($key === 'mail' && $rule === 'noempty') {
+    return 'メールアドレスが入力されていません';
+  }
+  if ($key === 'name' && $rule === 'noempty') {
+    return '氏名が入力されていません';
+  }
+  if ($key === 'tel' && $rule === 'noempty') {
+    return '電話番号が入力されていません';
+  }
+  if ($key === 'contact' && $rule === 'required') {
+    return 'お問い合わせの種類を選択してください';
+  }
+  if ($key === 'detail' && $rule === 'noempty') {
+    return 'お問い合わせの内容が入力されていません';
+  }
+  if ($key === 'check' && $rule === 'required') {
+    return 'プライバシーポリシーの同意が必要です';
+  }
+  return $error;
+}
+add_filter('mwform_error_message_mw-wp-form-40', 'my_error_message', 10, 3);
+
+/**
+ * お問い合わせ完了ページのみ親のパンくず非表示
+ */
+add_action('bcn_after_fill', function ($trail) {
+	if (is_page('thanks')) {
+		if (($count = count($trail->breadcrumbs)) > 2) {
+			array_splice($trail->breadcrumbs, 1, $count -  2);
+		}
+	}
+});

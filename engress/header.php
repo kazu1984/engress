@@ -53,10 +53,10 @@
           </div>
           <div class="p-header__buttons">
             <div class="p-header__request c-button-wrapper">
-              <a href="#" class="c-button c-slide-anime"><span>資料請求</span></a>
+              <a href="<?php echo esc_url(home_url('contact')) ?>" class="c-button c-slide-anime"><span>資料請求</span></a>
             </div>
             <div class="p-header__contact c-button-wrapper">
-              <a href="#" class="c-button c-button--blue c-slide-anime"><span>お問い合わせ</span></a>
+              <a href="<?php echo esc_url(home_url('contact')) ?>" class="c-button c-button--blue c-slide-anime"><span>お問い合わせ</span></a>
             </div>
           </div>
         </div>
@@ -161,10 +161,10 @@
             <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金コース・料金コース・料金</a>
           </li>
           <li class="p-drawer__item p-drawer__item--button">
-            <a href="#" class="c-button">資料請求</a>
+            <a href="<?php echo esc_url(home_url('contact')) ?>" class="c-button">資料請求</a>
           </li>
           <li class="p-drawer__item p-drawer__item--button">
-            <a href="#" class="c-button c-button--blue">お問い合わせ</a>
+            <a href="<?php echo esc_url(home_url('contact')) ?>" class="c-button c-button--blue">お問い合わせ</a>
           </li>
         </ul>
       </div>

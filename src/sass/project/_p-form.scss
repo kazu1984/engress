@@ -1,0 +1,46 @@
+@use "setting" as *;
+
+.p-form__label {
+  font-weight: $medium;
+}
+
+.p-form__label--policy {
+  margin-top: rem(30);
+  text-align: center;
+  a {
+    color: $color-form-policy;
+  }
+}
+
+.p-form__label:nth-child(n + 2) {
+  margin-top: rem(20);
+}
+
+.p-form__input {
+  margin-top: rem(12);
+}
+
+.p-form__input--policy {
+  text-align: center;
+}
+
+.p-form__button {
+  margin-top: rem(48);
+  text-align: center;
+}
+
+
+.p-form__submit {
+  display: inline-block;
+  width: rem(200);
+  font-weight: $bold;
+  padding: rem(17) 0;
+  color: $color-base-font-second;
+  background-color: $color-button-background--blue;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+
+
+
