@@ -1,0 +1,7 @@
+@use "setting" as *;
+
+.u-text-left-pc {
+  @include mq("md") {
+    text-align: left;
+  }
+}

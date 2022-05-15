@@ -1,0 +1,13 @@
+@use "setting" as *;
+
+.c-badge {
+  display: block;
+  font-size: rem(12);
+  color: $color-base-font-second;
+  background-color: $color-badge-background;
+  padding: 0.47em 0.6em;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

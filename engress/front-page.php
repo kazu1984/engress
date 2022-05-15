@@ -169,6 +169,48 @@
     </div>
   </section>
 
+  <div class="l-post p-post">
+    <div class="l-inner p-post__inner">
+      <section class="p-post__single">
+        <h2 class="c-section-title c-section-title--small u-text-left-pc">ブログ</h2>
+        <?php
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 3,
+          'ignore_sticky_posts' => '1'
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if ($the_query->have_posts()) : ?>
+          <ul class="p-post__items">
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+              <li class="p-post__item">
+                <a href="<?php the_permalink(); ?>" class="p-media-top">
+                  <div class="p-media-top__head">
+                    <figure class="p-media-top__img">
+                      <img src="<?php echo get_eyecatch_with_default()[0] ?>" alt="<?php echo get_eyecatch_alt() ?>">
+                    </figure>
+                    <?php $category = get_the_category(); ?>
+                    <span class="p-media-top__category c-badge"><?php echo $category[0]->cat_name ?></span>
+                  </div>
+                  <div class="p-media-top__body">
+                    <h3 class="p-media-top__title"><?php echo get_post_title(get_the_title()); ?></h3>
+                    <time class="p-media-top__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  </div>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        <?php else : ?>
+          <p class="p-post__message">ブログ記事はありません</p>
+        <?php endif; ?>
+      </section>
+      <section class="p-post__info">
+        <h2 class="c-section-title c-section-title--small u-text-left-pc">お知らせ</h2>
+      </section>
+    </div>
+  </div>
+
   <div class="l-top-cta">
     <?php get_template_part('template-parts/template-cta', null); ?>
   </div>

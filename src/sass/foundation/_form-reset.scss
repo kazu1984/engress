@@ -110,6 +110,10 @@
   width: 16px;
 }
 
+.p-form__radio:focus + span::before {
+	border: 2px solid $color-form-border;
+}
+
 .p-form__radio + span::after {
   -webkit-transform: translateY(-50%);
   background: $color-form-marker;
@@ -165,6 +169,10 @@
   top: 50%;
   transform: translateY(-50%);
   width: 1em;
+}
+
+.p-form__check:focus + span::before {
+    border: 2px solid $color-form-border;
 }
 
 .p-form__check + span::after {
