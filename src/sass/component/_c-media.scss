@@ -1,0 +1,74 @@
+@use "setting" as *;
+
+.c-media {
+  display: flex;
+}
+
+.c-media--sp-col {
+  flex-direction: column;
+  @include mq("md") {
+    flex-direction: row;
+  }
+}
+
+.c-media:hover .c-media__title {
+  text-decoration: underline;
+}
+
+.c-media__head {
+  position: relative;
+}
+
+.c-media__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-media__img::before {
+  content: "";
+  display: block;
+}
+
+.c-media__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.c-media__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c-media__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.c-media__date {
+  font-size: rem(12);
+}
+
+.c-media__title {
+  font-weight: $bold;
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+
+.c-media__text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}

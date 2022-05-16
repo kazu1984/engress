@@ -1,0 +1,9 @@
+@use "setting" as *;
+
+.p-blog-list__item + .p-blog-list__item {
+  margin-top: rem(60);
+}
+
+.p-blog-list__message {
+  margin-top: rem(60);
+}

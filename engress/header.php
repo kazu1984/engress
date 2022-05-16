@@ -35,7 +35,7 @@
                 <a href="#" class="c-menu-link c-menu-link--header">お知らせ</a>
               </li>
               <li class="p-header__item">
-                <a href="#" class="c-menu-link c-menu-link--header">ブログ</a>
+                <a href="<?php echo esc_url(home_url('blog')) ?>" class="c-menu-link c-menu-link--header">ブログ</a>
               </li>
               <li class="p-header__item">
                 <a href="<?php echo esc_url(home_url('plan')) ?>" class="c-menu-link c-menu-link--header">コース・料金</a>
@@ -77,7 +77,7 @@
             <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">お知らせ</a>
           </li>
           <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">ブログ</a>
+            <a href="<?php echo esc_url(home_url('blog')) ?>" class="p-drawer__link">ブログ</a>
           </li>
           <li class="p-drawer__item">
             <a href="<?php echo esc_url(home_url('plan')) ?>" class="p-drawer__link">コース・料金</a>

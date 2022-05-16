@@ -1,0 +1,26 @@
+@use "setting" as *;
+
+.c-pagenavi {
+  font-weight: $bold;
+  display: flex;
+  justify-content: center;
+}
+
+.c-pagenavi > *:nth-child(n + 2) {
+  margin-left: rem(19);
+}
+
+.c-pagenavi > *:not(.extend) {
+  padding: rem(11) rem(19);
+  border: 1px solid $color-pagenavi-background;
+}
+
+.c-pagenavi .extend {
+  display: block;
+  margin-top: rem(9);
+}
+
+.c-pagenavi .current {
+  background-color: $color-pagenavi-background;
+  color: $color-base-font-second;
+}

@@ -7,20 +7,22 @@
 <?php get_template_part('template-parts/breadcrumb') ?>
 
 <main>
-  <section class="l-fee-system p-fee-system">
-    <div class="l-inner">
-      <h2 class="c-section-title">料金体系</h2>
-      <div class="p-fee-system__box">
-        <span class="p-fee-system__label">入会金 39,800円</span>
-        <span class="p-fee-system__plus"></span>
-        <span class="p-fee-system__label">月額費用</span>
-      </div>
-      <p class="p-fee-system__text">Engressのカリキュラムは完全オーダーメイドのため、カリキュラム内のサポート内容によって料金が変動します。おすすめのスタンダードプランでは、進学先に合わせたサポートまで包括的に行います。</p>
-    </div>
-  </section>
 
-  <section class="l-fee-list p-fee-list">
-    <div class="l-inner">
+  <div class="l-content l-inner">
+
+    <section class="p-fee-system">
+      <div class="l-inner">
+        <h2 class="c-section-title">料金体系</h2>
+        <div class="p-fee-system__box">
+          <span class="p-fee-system__label">入会金 39,800円</span>
+          <span class="p-fee-system__plus"></span>
+          <span class="p-fee-system__label">月額費用</span>
+        </div>
+        <p class="p-fee-system__text">Engressのカリキュラムは完全オーダーメイドのため、カリキュラム内のサポート内容によって料金が変動します。おすすめのスタンダードプランでは、進学先に合わせたサポートまで包括的に行います。</p>
+      </div>
+    </section>
+
+    <section class="l-fee-list p-fee-list">
       <h2 class="c-section-title">料金表</h2>
       <ul class="p-fee-list__items js-scrollable">
         <li class="p-fee-list__item">
@@ -73,8 +75,10 @@
           </div>
         </li>
       </ul>
-    </div>
-  </section>
+    </section>
+
+  </div>
+  
 </main>
 
 <?php get_footer(); ?>
