@@ -1,0 +1,80 @@
+@use "setting" as *;
+
+.p-single__top {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.p-single__post {
+  @include mq("md") {
+    flex: 0 0 65.5555%;
+  }
+}
+
+.p-single__aside {
+  @include mq("md") {
+    width: 100%;
+    margin-left: 4%;
+  }
+  background-color: #c9dc82;
+}
+
+.p-single__title {
+  font-size: rem(22);
+  font-weight: $bold;
+  margin-top: rem(31);
+  line-height: 1.5;
+  @include mq("md") {
+    font-size: rem(28);
+  }
+}
+
+.p-single__meta {
+  margin-top: rem(20);
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-single__date {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-left: auto;
+  }
+}
+
+.p-single__img {
+  position: relative;
+  overflow: hidden;
+  margin-top: rem(22);
+}
+
+.p-single__img::before {
+  content: "";
+  display: block;
+  padding-top: 62.7118%;
+}
+
+.p-single__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.p-single__content {
+  margin-top: rem(40);
+}
+
+.p-single__content > *:not(:first-child) {
+  margin-top: rem(30);
+}
+
+.p-single__bottom {
+  margin-top: rem(60);
+}

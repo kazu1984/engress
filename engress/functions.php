@@ -209,9 +209,27 @@ add_filter('mwform_error_message_mw-wp-form-40', 'my_error_message', 10, 3);
  * お問い合わせ完了ページのみ親のパンくず非表示
  */
 add_action('bcn_after_fill', function ($trail) {
-	if (is_page('thanks')) {
-		if (($count = count($trail->breadcrumbs)) > 2) {
-			array_splice($trail->breadcrumbs, 1, $count -  2);
-		}
-	}
+  if (is_page('thanks')) {
+    if (($count = count($trail->breadcrumbs)) > 2) {
+      array_splice($trail->breadcrumbs, 1, $count -  2);
+    }
+  }
 });
+
+/**
+ *  メインループの制御
+ */
+function my_query($query)
+{
+  if (is_admin() || !$query->is_main_query()) {
+    return;
+  }
+
+  if ($query->is_home()) {
+    $query->set('post_type', 'post');
+    $query->set('posts_per_page', 10);
+    $query->set('ignore_sticky_posts', 1);
+    return;
+ }
+}
+add_filter('pre_get_posts', 'my_query');

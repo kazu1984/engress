@@ -169,6 +169,7 @@
     </div>
   </section>
 
+
   <div class="l-post p-post">
     <div class="l-inner p-post__inner">
       <section class="p-post__single">
@@ -181,6 +182,7 @@
         );
         $the_query = new WP_Query($args);
         ?>
+
         <?php if ($the_query->have_posts()) : ?>
           <ul class="p-post__items">
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -204,6 +206,7 @@
         <?php else : ?>
           <p class="p-post__message">ブログ記事はありません</p>
         <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
       </section>
       <section class="p-post__info">
         <h2 class="c-section-title c-section-title--small u-text-left-pc">お知らせ</h2>

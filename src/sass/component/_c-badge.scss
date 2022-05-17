@@ -1,7 +1,7 @@
 @use "setting" as *;
 
 .c-badge {
-  display: block;
+  display: inline-block;
   font-size: rem(12);
   color: $color-base-font-second;
   background-color: $color-badge-background;
@@ -10,4 +10,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.c-badge--single {
+  padding: 0.8em 1.95em;
 }

@@ -1,0 +1,124 @@
+@use "setting" as *;
+
+.c-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $bold;
+  }
+}
+
+.c-content h1 {
+  font-size: rem(32);
+}
+
+.c-content h2 {
+  font-size: rem(26);
+}
+
+.c-content h3 {
+  position: relative;
+  font-size: rem(22);
+  padding-left: 0.8em;
+}
+
+.c-content h3::before {
+  position: absolute;
+  content: "";
+  border-left: rem(4) solid $color-base-font;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.c-content h4 {
+  font-size: rem(18);
+}
+
+.c-content a {
+  color: $color-post-link;
+}
+
+.c-content a:hover {
+  text-decoration: underline;
+}
+
+.c-content pre {
+  white-space: pre-wrap;
+}
+
+.c-content .wp-block-quote {
+  border: none;
+}
+
+.c-content blockquote {
+  position: relative;
+  background-color: #f8f8f8;
+  display: table;
+  line-height: 1.5;
+  padding: rem(27) rem(26) rem(32) rem(74);
+}
+
+.c-content blockquote::before {
+  position: absolute;
+  content: "“";
+  color: #b4b4b4;
+  font-size: rem(85);
+  top: 0;
+  left: 3%;
+}
+
+.c-content blockquote cite {
+  display: block;
+  font-size: rem(12);
+  margin-top: rem(20);
+  text-align: right;
+}
+
+.c-content li {
+  position: relative;
+  margin-top: rem(10);
+  margin-left: rem(25);
+  line-height: 1.5;
+}
+
+.c-content ul > li::before {
+  position: absolute;
+  content: "●";
+  font-size: rem(12);
+  color: $color-post-list;
+  top: 0.2em;
+  left: -2.5em;
+}
+
+.c-content ol {
+  counter-reset: item;
+}
+
+.c-content ol > li {
+  position: relative;
+  counter-increment: item;
+}
+
+.c-content ol > li::before {
+  position: absolute;
+  content: "";
+  font-size: rem(16);
+  color: $color-base-font;
+  top: 0;
+  left: -1.7em;
+  content: counter(item) ".";
+}
+
+.c-content input[type="password"] {
+  border: 1px solid $color-base-font;
+}
+
+.c-content input[type="submit"] {
+  background-color: $orange;
+  color: $color-base-font-second;
+  padding: rem(5);;
+}

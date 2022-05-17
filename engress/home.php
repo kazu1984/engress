@@ -13,17 +13,21 @@
     <h2 class="c-section-title">新着一覧</h2>
 
     <?php
-    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-    $args = array(
-      'post_type' => 'post',
-      'paged' => $paged,
-      'ignore_sticky_posts' => '1'
-    );
-    $the_query = new WP_Query($args);
+    // $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+    // $args = array(
+    //   'post_type' => 'post',
+    //   'paged' => $paged,
+    //   'ignore_sticky_posts' => '1'
+    // );
+    // $the_query = new WP_Query($args);
+    // $paged = get_query_var('paged') ? get_query_var('paged') : 1;    //pagedに渡す変数
+    // query_posts($query_string . 'paged=' . $paged);  //pagedとposts_per_pageの指定
+    // query_posts( $query_string.'&paged='.$paged); 
     ?>
-    <?php if ($the_query->have_posts()) : ?>
+
+    <?php if (have_posts()) : ?>
       <ul class="l-blog-list p-blog-list">
-        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
           <li class="p-blog-list__item">
             <article>
               <a href="<?php the_permalink(); ?>" class="p-media-blog c-media c-media--sp-col">
@@ -50,10 +54,12 @@
 
     <?php if (function_exists('wp_pagenavi')) : ?>
       <div class="l-blog-pagenavi">
-        <?php wp_pagenavi(array('wrapper_class' => 'c-pagenavi', 'query' => $the_query));
+        <?php wp_pagenavi(array('wrapper_class' => 'c-pagenavi'));
         ?>
       </div>
     <?php endif; ?>
+
+    <?php wp_reset_query(); ?>
 
   </div>
 

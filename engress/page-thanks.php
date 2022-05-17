@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<div class="l-thanks-breadcrumb">
-  <?php get_template_part('template-parts/breadcrumb') ?>
-</div>
+<?php get_template_part('template-parts/breadcrumb') ?>
 
 <main>
   <div class="l-inner">
