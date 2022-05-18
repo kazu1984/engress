@@ -57,6 +57,8 @@ a {
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-form__text {
@@ -776,6 +778,11 @@ th {
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.l-mv {
+  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .l-page-header {
@@ -1827,6 +1834,7 @@ th {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
 }
 
 .p-fee-list__items {
@@ -2575,10 +2583,10 @@ th {
 .p-mv__inner {
   text-align: center;
   color: #fff;
-  padding-top: 116px;
-  padding-top: 7.25rem;
-  padding-bottom: 86px;
-  padding-bottom: 5.375rem;
+  padding-top: 90px;
+  padding-top: 5.625rem;
+  padding-bottom: 76px;
+  padding-bottom: 4.75rem;
 }
 
 .p-mv__title {
@@ -2595,19 +2603,19 @@ th {
 .p-mv__text {
   font-size: 18px;
   font-size: 1.125rem;
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
   line-height: 1.72;
 }
 
 .p-mv__button {
-  margin-top: 51px;
-  margin-top: 3.1875rem;
+  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 
 .p-mv__link {
-  margin-top: 22px;
-  margin-top: 1.375rem;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .p-page-header {
