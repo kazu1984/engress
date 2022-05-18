@@ -1,0 +1,13 @@
+@use "setting" as *;
+
+.p-related__items {
+  margin-top: rem(30);
+}
+
+.p-related__item + .p-related__item {
+  margin-top: rem(39);
+}
+
+.p-related__message {
+  margin-top: rem(30);
+}

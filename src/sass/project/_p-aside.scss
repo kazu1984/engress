@@ -1,0 +1,5 @@
+@use "setting" as *;
+
+.p-aside__item + .p-aside__item {
+  margin-top: rem(50);
+}

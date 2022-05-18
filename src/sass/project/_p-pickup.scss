@@ -1,0 +1,17 @@
+@use "setting" as *;
+
+.p-pickup__title {
+  font-size: rem(22);
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(26);
+  }
+}
+
+.p-pickup__items {
+  margin-top: rem(30);
+}
+
+.p-pickup__item + .p-pickup__item {
+  margin-top: rem(28);
+}

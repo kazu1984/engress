@@ -1,23 +1,24 @@
 @use "setting" as *;
 
-.p-single__top {
+.p-single__inner {
   @include mq("md") {
     display: flex;
   }
 }
 
-.p-single__post {
+.p-single__main {
   @include mq("md") {
     flex: 0 0 65.5555%;
   }
 }
 
 .p-single__aside {
+  margin-top: rem(50);
   @include mq("md") {
     width: 100%;
+    margin-top: 0;
     margin-left: 4%;
   }
-  background-color: #c9dc82;
 }
 
 .p-single__title {

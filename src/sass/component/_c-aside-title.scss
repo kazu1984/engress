@@ -1,0 +1,15 @@
+@use "setting" as *;
+
+.c-aside-title {
+  display: ilock;
+  font-size: rem(19);
+  font-weight: $bold;
+  color: $color-base-font-second;
+  text-align: center;
+  background-color: $color-base-background-second;
+  padding: 1em 0;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(21);
+  }
+}

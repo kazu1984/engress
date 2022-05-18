@@ -1,0 +1,26 @@
+@use "setting" as *;
+
+.p-media-pickup__head {
+  @include mq("sm") {
+    flex: 0 0 35.5932%;
+  }
+}
+
+.p-media-pickup__img {
+  padding-top: 60.9523%;
+}
+
+.p-media-pickup__body {
+  @include mq("sm") {
+    padding-left: rem(32);
+  }
+}
+
+.p-media-pickup__title {
+  font-size: rem(14);
+  margin-top: rem(10);
+  @include mq("md") {
+    font-size: rem(18);
+    margin-top: rem(24);
+  }
+}

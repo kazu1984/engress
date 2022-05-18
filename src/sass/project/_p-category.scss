@@ -1,0 +1,15 @@
+@use "setting" as *;
+
+.p-category__items {
+  margin-top: rem(30);
+}
+
+.p-category__item {
+  font-weight: $bold;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.p-category__item + .p-category__item {
+  margin-top: rem(11);
+}

@@ -1,8 +1,8 @@
 @use "setting" as *;
 
 .p-media-blog__head {
-  width: 100%;
-  @include mq("md") {
+  // width: 100%;
+  @include mq("sm") {
     flex: 0 0 26.6666%;
   }
 }
@@ -13,13 +13,13 @@
 
 
 .p-media-blog__body {
-  @include mq("md") {
+  @include mq("sm") {
     padding-left: rem(50);
   }
 }
 
 .p-media-blog__title {
-  font-size: rem(20);
+  font-size: rem(18);
   margin-top: rem(12);
   @include mq("md") {
     font-size: rem(26);
@@ -27,7 +27,7 @@
 }
 
 .p-media-blog__text {
-  margin-top: rem(12);
+  margin-top: rem(10);
   @include mq("md") {
     margin-top: rem(20);
   }

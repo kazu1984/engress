@@ -230,6 +230,7 @@ function my_query($query)
     $query->set('posts_per_page', 10);
     $query->set('ignore_sticky_posts', 1);
     return;
- }
+  }
 }
 add_filter('pre_get_posts', 'my_query');
+
