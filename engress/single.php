@@ -24,7 +24,7 @@
               <h1 class="p-single__title"><?php echo get_post_title(get_the_title()); ?></h1>
 
               <div class="p-single__meta">
-                <time class="p-single__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y-n-j'); ?></time>
+                <time class="p-single__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
               </div>
 
               <?php if (!is_singular('news')) : ?>
@@ -55,11 +55,11 @@
                         'post__not_in' => array($post->ID),
                         'tag_id' => 7,  // 'pickup'
                       );
-                      $the_query = new WP_Query($args);
+                      $query = new WP_Query($args);
                       ?>
-                      <?php if ($the_query->have_posts()) : ?>
+                      <?php if ($query->have_posts()) : ?>
                         <ul class="p-pickup__items">
-                          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                          <?php while ($query->have_posts()) : $query->the_post(); ?>
                             <li class="p-pickup__item">
                               <a href="<?php the_permalink(); ?>" class="p-media-pickup c-media c-media--sp-col">
                                 <div class="p-media-pickup__head c-media__head">
@@ -70,7 +70,7 @@
                                   <span class="p-media-pickup__category c-media__category c-badge"><?php echo $category[0]->cat_name ?></span>
                                 </div>
                                 <div class="p-media-pickup__body c-media__body">
-                                  <time class="p-media-pickup__date c-media__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y-n-j'); ?></time>
+                                  <time class="p-media-pickup__date c-media__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
                                   <h3 class="p-media-pickup__title c-media__title"><?php echo get_post_title(get_the_title()); ?></h3>
                                 </div>
                               </a>

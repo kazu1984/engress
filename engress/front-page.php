@@ -197,7 +197,7 @@
                   </div>
                   <div class="p-media-top__body c-media__body">
                     <h3 class="p-media-top__title c-media__title"><?php echo get_post_title(get_the_title()); ?></h3>
-                    <time class="p-media-top__date c-media__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y-n-j'); ?></time>
+                    <time class="p-media-top__date c-media__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
                   </div>
                 </a>
               </li>
@@ -222,7 +222,7 @@
             <?php while ($query->have_posts()) : $query->the_post(); ?>
               <li class="p-post__item">
                 <a href="<?php the_permalink(); ?>" class="p-news-top">
-                  <time class="p-news-top__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  <time class="p-news-top__date" datetime="<?php the_time('Y-m-j'); ?>"><?php the_time('Y-m-j'); ?></time>
                   <h3 class="p-news-top__title"><?php echo get_post_title(get_the_title()); ?></h3>
                 </a>
               </li>

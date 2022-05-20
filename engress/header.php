@@ -32,7 +32,7 @@
                 <a href="<?php echo esc_url(home_url()) ?>" class="c-menu-link c-menu-link--header">ホーム</a>
               </li>
               <li class="p-header__item">
-                <a href="#" class="c-menu-link c-menu-link--header">お知らせ</a>
+                <a href="<?php echo esc_url(home_url('news')) ?>" class="c-menu-link c-menu-link--header">お知らせ</a>
               </li>
               <li class="p-header__item">
                 <a href="<?php echo esc_url(home_url('blog')) ?>" class="c-menu-link c-menu-link--header">ブログ</a>
@@ -74,91 +74,13 @@
             <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">ホーム</a>
           </li>
           <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">お知らせ</a>
+            <a href="<?php echo esc_url(home_url('news')) ?>" class="p-drawer__link">お知らせ</a>
           </li>
           <li class="p-drawer__item">
             <a href="<?php echo esc_url(home_url('blog')) ?>" class="p-drawer__link">ブログ</a>
           </li>
           <li class="p-drawer__item">
             <a href="<?php echo esc_url(home_url('plan')) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金</a>
-          </li>
-          <li class="p-drawer__item">
-            <a href="<?php echo esc_url(home_url()) ?>" class="p-drawer__link">コース・料金コース・料金コース・料金</a>
           </li>
           <li class="p-drawer__item p-drawer__item--button">
             <a href="<?php echo esc_url(home_url('contact')) ?>" class="c-button">資料請求</a>

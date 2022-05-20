@@ -6,7 +6,7 @@
           <a href="<?php echo esc_url(home_url()) ?>" class="c-menu-link">ホーム</a>
         </li>
         <li class="p-footer__item">
-          <a href="#" class="c-menu-link">お知らせ</a>
+          <a href="<?php echo esc_url(home_url('news')) ?>" class="c-menu-link">お知らせ</a>
         </li>
         <li class="p-footer__item">
           <a href="<?php echo esc_url(home_url('blog')) ?>" class="c-menu-link">ブログ</a>

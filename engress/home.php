@@ -12,19 +12,6 @@
 
     <h2 class="c-section-title">新着一覧</h2>
 
-    <?php
-    // $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-    // $args = array(
-    //   'post_type' => 'post',
-    //   'paged' => $paged,
-    //   'ignore_sticky_posts' => '1'
-    // );
-    // $the_query = new WP_Query($args);
-    // $paged = get_query_var('paged') ? get_query_var('paged') : 1;    //pagedに渡す変数
-    // query_posts($query_string . 'paged=' . $paged);  //pagedとposts_per_pageの指定
-    // query_posts( $query_string.'&paged='.$paged); 
-    ?>
-
     <?php if (have_posts()) : ?>
       <ul class="l-blog-list p-blog-list">
         <?php while (have_posts()) : the_post(); ?>
@@ -39,7 +26,7 @@
                   <span class="p-media-blog__category c-media__category c-badge"><?php echo $category[0]->cat_name ?></span>
                 </div>
                 <div class="p-media-blog__body c-media__body">
-                  <time class="p-media-blog__date c-media__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y-n-j'); ?></time>
+                  <time class="p-media-blog__date c-media__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
                   <h3 class="p-media-blog__title c-media__title"><?php echo get_post_title(get_the_title()); ?></h3>
                   <p class="p-media-blog__text c-media__text"><?php the_excerpt(); ?></p>
                 </div>
