@@ -1,0 +1,18 @@
+@use "setting" as *;
+
+.p-news-top:hover .p-news-top__title {
+  text-decoration: underline;
+}
+
+.p-news-top__date {
+  font-size: rem(12);
+}
+
+.p-news-top__title {
+  margin-top: rem(16);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}

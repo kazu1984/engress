@@ -12,6 +12,12 @@
   }
 }
 
+.p-single__main--news {
+  @include mq("md") {
+    flex: 0 0 100%;
+  }
+}
+
 .p-single__aside {
   margin-top: rem(50);
   @include mq("md") {
@@ -19,6 +25,10 @@
     margin-top: 0;
     margin-left: 4%;
   }
+}
+
+.p-single__top > *:first-child {
+  margin-top: 0;
 }
 
 .p-single__title {
@@ -70,6 +80,10 @@
 
 .p-single__content {
   margin-top: rem(40);
+}
+
+.p-single__content--news {
+  margin-top: rem(60);
 }
 
 .p-single__content > *:not(:first-child) {

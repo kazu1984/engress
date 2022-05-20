@@ -180,12 +180,12 @@
           'posts_per_page' => 3,
           'ignore_sticky_posts' => '1'
         );
-        $the_query = new WP_Query($args);
+        $query = new WP_Query($args);
         ?>
 
-        <?php if ($the_query->have_posts()) : ?>
+        <?php if ($query->have_posts()) : ?>
           <ul class="p-post__items">
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
               <li class="p-post__item">
                 <a href="<?php the_permalink(); ?>" class="p-media-top c-media">
                   <div class="p-media-top__head c-media__head">
@@ -210,6 +210,28 @@
       </section>
       <section class="p-post__info">
         <h2 class="c-section-title c-section-title--small u-text-left-pc">お知らせ</h2>
+        <?php
+        $args = array(
+          'post_type' => 'news',
+          'posts_per_page' => 3,
+        );
+        $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()) : ?>
+          <ul class="p-post__items">
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+              <li class="p-post__item">
+                <a href="<?php the_permalink(); ?>" class="p-news-top">
+                  <time class="p-news-top__date" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  <h3 class="p-news-top__title"><?php echo get_post_title(get_the_title()); ?></h3>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        <?php else : ?>
+          <p class="p-post__message">お知らせはありません</p>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
       </section>
     </div>
   </div>
