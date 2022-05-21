@@ -17,7 +17,7 @@
         <?php while (have_posts()) : the_post(); ?>
           <li class="p-news-list__item">
             <article>
-              <a href="#" class="p-news-list__link">
+              <a href="<?php the_permalink(); ?>" class="p-news-list__link">
                 <time class="p-news-list__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
                 <h3 class="p-news-list__title"><?php echo get_post_title(get_the_title()); ?></h3>
               </a>
@@ -25,8 +25,9 @@
           </li>
         <?php endwhile; ?>
       </ul>
+    <?php else : ?>
+      <p class="p-news-list__message">お知らせはありません</p>
     <?php endif; ?>
-    </ul>
 
     <?php if (function_exists('wp_pagenavi')) : ?>
       <div class="l-blog-pagenavi">

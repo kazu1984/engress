@@ -183,9 +183,9 @@
         $query = new WP_Query($args);
         ?>
 
-        <?php if ($query->have_posts()) : ?>
+        <?php if (have_posts()) : ?>
           <ul class="p-post__items">
-            <?php while ($query->have_posts()) : $query->the_post(); ?>
+            <?php while (have_posts()) : the_post(); ?>
               <li class="p-post__item">
                 <a href="<?php the_permalink(); ?>" class="p-media-top c-media">
                   <div class="p-media-top__head c-media__head">
@@ -207,6 +207,7 @@
           <p class="p-post__message">ブログ記事はありません</p>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
+
       </section>
       <section class="p-post__info">
         <h2 class="c-section-title c-section-title--small u-text-left-pc">お知らせ</h2>

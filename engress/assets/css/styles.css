@@ -2668,6 +2668,11 @@ th {
   }
 }
 
+.p-news-list__message {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+
 .p-news-top:hover .p-news-top__title {
   text-decoration: underline;
 }

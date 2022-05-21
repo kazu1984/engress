@@ -11,10 +11,19 @@
   <div class="l-content l-inner">
 
     <h2 class="c-section-title">新着一覧</h2>
-
-    <?php if (have_posts()) : ?>
+    <?php
+    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 3,
+      'paged' => $paged,
+      'ignore_sticky_posts' => 1,
+    );
+    $query = new WP_Query($args);
+    ?>
+    <?php if ($query->have_posts()) : ?>
       <ul class="l-blog-list p-blog-list">
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
           <li class="p-blog-list__item">
             <article>
               <a href="<?php the_permalink(); ?>" class="p-media-blog c-media c-media--sp-col">
@@ -41,12 +50,11 @@
 
     <?php if (function_exists('wp_pagenavi')) : ?>
       <div class="l-blog-pagenavi">
-        <?php wp_pagenavi(array('wrapper_class' => 'c-pagenavi'));
-        ?>
+        <?php wp_pagenavi(array('wrapper_class' => 'c-pagenavi', 'query' => $query)); ?>
       </div>
     <?php endif; ?>
 
-    <?php wp_reset_query(); ?>
+    <?php wp_reset_postdata(); ?>
 
   </div>
 

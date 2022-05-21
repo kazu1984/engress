@@ -225,18 +225,14 @@ function my_query($query)
     return;
   }
 
-  if ($query->is_home()) {
-    $query->set('post_type', 'post');
-    $query->set('posts_per_page', 10);
-    $query->set('ignore_sticky_posts', 1);
-    return;
-  }
+  $post_per_page = 2;
+  $query->set('posts_per_page', $post_per_page);
 
-  if ($query->is_archive('news')) {
-    $query->set('post_type', 'news');
-    $query->set('posts_per_page', 2);
-    return;
-  }
+  // if ($query->is_post_type_archive('news')) {
+  //   $query->set('post_type', 'news');
+  //   $query->set('posts_per_page', $post_per_page);
+  //   return;
+  // }
+
 }
 add_filter('pre_get_posts', 'my_query');
-
