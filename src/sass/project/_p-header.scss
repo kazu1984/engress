@@ -47,6 +47,7 @@
     align-items: center;
     height: inherit;
   }
+
 }
 
 .p-header__info {
@@ -95,6 +96,9 @@
   margin-left: auto;
   z-index: map-get($layer, "header-menu");
   @include mq("md") {
+    margin-left: rem(25);
+  }
+  @include mq("lg") {
     display: none;
   }
 }
