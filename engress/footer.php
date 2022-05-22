@@ -36,6 +36,9 @@
   </div>
 </footer>
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v12.0" nonce="RGgfsqxn"></script>
+
 </div>
 <!-- l-container end -->
 <?php wp_footer(); ?>

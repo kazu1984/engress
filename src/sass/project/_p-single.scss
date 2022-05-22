@@ -45,12 +45,23 @@
   margin-top: rem(20);
   @include mq("md") {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
+}
+
+.p-single__sns-items {
+  display: flex;
+  align-items: flex-start;
+}
+
+.p-single__twitter .twitter-share-button {
+  height: 28px !important;
+  margin-left: rem(3);
 }
 
 .p-single__date {
   font-size: rem(14);
+  line-height: 1;
   @include mq("md") {
     font-size: rem(16);
     margin-left: auto;
@@ -92,4 +103,8 @@
 
 .p-single__bottom {
   margin-top: rem(60);
+}
+
+.wp_social_bookmarking_light {
+  padding: 0 !important;
 }

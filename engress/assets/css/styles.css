@@ -2982,15 +2982,31 @@ th {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
+}
+
+.p-single__sns-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.p-single__twitter .twitter-share-button {
+  height: 28px !important;
+  margin-left: 3px;
+  margin-left: 0.1875rem;
 }
 
 .p-single__date {
   font-size: 14px;
   font-size: 0.875rem;
+  line-height: 1;
 }
 @media screen and (min-width: 768px), print {
   .p-single__date {
@@ -3040,6 +3056,10 @@ th {
 .p-single__bottom {
   margin-top: 60px;
   margin-top: 3.75rem;
+}
+
+.wp_social_bookmarking_light {
+  padding: 0 !important;
 }
 
 .p-tel-contact__inner {

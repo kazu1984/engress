@@ -24,6 +24,20 @@
               <h1 class="p-single__title"><?php echo get_post_title(get_the_title()); ?></h1>
 
               <div class="p-single__meta">
+                <?php if (!is_singular('news')) : ?>
+                  <ul class="p-single__sns-items">
+                    <li class="p-single__sns-item">
+                      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                    </li>
+                    <li class="p-single__sns-item">
+                      <div class="p-single__twitter">
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                      </div>
+                    </li>
+                  </ul>
+                <?php endif; ?>
+
                 <time class="p-single__date" datetime="<?php the_time('Y.m.j'); ?>"><?php the_time('Y-m-j'); ?></time>
               </div>
 

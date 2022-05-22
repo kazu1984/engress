@@ -33,8 +33,8 @@
       <ul class="l-blog-list p-blog-list">
         <?php while ($query->have_posts()) : $query->the_post(); ?>
           <li class="p-blog-list__item">
-            <article>
-              <a href="<?php the_permalink(); ?>" class="p-media-blog c-media c-media--sp-col">
+            <article class="p-media-blog">
+              <a href="<?php the_permalink(); ?>" class="c-media c-media--sp-col">
                 <div class="p-media-blog__head c-media__head">
                   <figure class="p-media-blog__img c-media__img">
                     <img src="<?php echo get_eyecatch_with_default()[0] ?>" alt="<?php echo get_eyecatch_alt() ?>">

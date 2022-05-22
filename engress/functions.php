@@ -236,3 +236,5 @@ function my_query($query)
 
 }
 add_filter('pre_get_posts', 'my_query');
+
+
