@@ -130,14 +130,14 @@
         <li class="p-flow__item">
           <span class="p-flow__number">03</span>
           <div class="p-flow__contents">
-            <h3 class="p-flow__title">学習プランの提供</h3>
+            <h3 class="p-flow__title">学習プランのご提供</h3>
             <p class="p-flow__text">目標達成のために最適な学習プランをご提案致します。</p>
           </div>
         </li>
         <li class="p-flow__item">
           <span class="p-flow__number">04</span>
           <div class="p-flow__contents">
-            <h3 class="p-flow__title">入会</h3>
+            <h3 class="p-flow__title">ご入会</h3>
             <p class="p-flow__text">お申込み完了後、レッスンがスタートします。</p>
           </div>
         </li>

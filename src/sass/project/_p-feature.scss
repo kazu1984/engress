@@ -1,7 +1,7 @@
 @use "setting" as *;
 
 .p-feature__items {
-  margin-top: rem(59);
+  margin-top: rem(46);
 }
 
 .p-feature__item {
@@ -12,7 +12,7 @@
 }
 
 .p-feature__item + .p-feature__item {
-  margin-top: rem(60);
+  margin-top: rem(56);
 }
 
 .p-feature__item:nth-child(even) {
@@ -60,9 +60,9 @@
     font-size: rem(22);
   }
   @include mq("md") {
-    font-size: rem(24);
+    font-size: rem(26);
     color: $color-base-font;
-    margin-top: rem(25);
+    margin-top: rem(28);
     padding: 0;
   }
 }
@@ -121,5 +121,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
 }

@@ -22,7 +22,6 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   color: #1B224C;
   background-color: #fff;
-  letter-spacing: 0.05em;
   line-height: 1.68;
 }
 
@@ -707,8 +706,8 @@ th {
 .l-case {
   margin-top: 39px;
   margin-top: 2.4375rem;
-  padding-top: 58px;
-  padding-top: 3.625rem;
+  padding-top: 47px;
+  padding-top: 2.9375rem;
   padding-bottom: 60px;
   padding-bottom: 3.75rem;
 }
@@ -736,8 +735,8 @@ th {
 }
 
 .l-feature {
-  margin-top: 59px;
-  margin-top: 3.6875rem;
+  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .l-fee-list {
@@ -751,8 +750,8 @@ th {
 }
 
 .l-flow {
-  margin-top: 57px;
-  margin-top: 3.5625rem;
+  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 
 .l-footer {
@@ -806,13 +805,13 @@ th {
 }
 
 .l-price {
-  margin-top: 93px;
-  margin-top: 5.8125rem;
+  margin-top: 90px;
+  margin-top: 5.625rem;
 }
 
 .l-question {
-  margin-top: 75px;
-  margin-top: 4.6875rem;
+  margin-top: 62px;
+  margin-top: 3.875rem;
 }
 
 .l-tel-contact {
@@ -1428,7 +1427,7 @@ th {
     display: flex;
     gap: 1.875rem;
     max-width: 100%;
-    margin-top: 8.5625rem;
+    margin-top: 7.3125rem;
   }
 }
 
@@ -1553,19 +1552,20 @@ th {
 
 .p-copy__inner {
   text-align: center;
-  padding-top: 63px;
-  padding-top: 3.9375rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   padding-bottom: 54px;
   padding-bottom: 3.375rem;
 }
 
 .p-copy__worries {
-  margin-top: 65px;
-  margin-top: 4.0625rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
   color: #fff;
 }
 @media screen and (min-width: 768px), print {
   .p-copy__worries {
+    margin-left: -1.625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1576,8 +1576,8 @@ th {
 }
 
 .p-copy__worry {
-  margin-top: 15px;
-  margin-top: 0.9375rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 2.16;
 }
 .p-copy__worry br {
@@ -1608,16 +1608,16 @@ th {
 }
 
 .p-copy__box {
-  margin-top: 83px;
-  margin-top: 5.1875rem;
+  margin-top: 72px;
+  margin-top: 4.5rem;
   padding: 11px 16px;
   padding: 0.6875rem 1rem;
   background-color: #fff;
 }
 
 .p-copy__box-inner {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 10px 10px 22px 10px;
+  padding: 0.625rem 0.625rem 1.375rem 0.625rem;
   border: 5px solid #1B224C;
 }
 
@@ -1643,8 +1643,8 @@ th {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.72;
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
 }
 
 .p-cta {
@@ -1717,8 +1717,8 @@ th {
 }
 
 .p-feature__items {
-  margin-top: 59px;
-  margin-top: 3.6875rem;
+  margin-top: 46px;
+  margin-top: 2.875rem;
 }
 
 .p-feature__item {
@@ -1733,8 +1733,8 @@ th {
 }
 
 .p-feature__item + .p-feature__item {
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 56px;
+  margin-top: 3.5rem;
 }
 
 @media screen and (min-width: 768px), print {
@@ -1796,9 +1796,9 @@ th {
 }
 @media screen and (min-width: 768px), print {
   .p-feature__title {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     color: #1B224C;
-    margin-top: 1.5625rem;
+    margin-top: 1.75rem;
     padding: 0;
   }
 }
@@ -1872,7 +1872,6 @@ th {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
 }
 
 .p-fee-list__items {
@@ -2070,8 +2069,8 @@ th {
 }
 
 .p-flow__items {
-  margin-top: 53px;
-  margin-top: 3.3125rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .p-flow__item {
@@ -2090,13 +2089,20 @@ th {
 }
 
 .p-flow__number {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 64px;
   width: 4rem;
   height: 100%;
   padding: 65px 0;
   padding: 4.0625rem 0;
-  text-align: center;
   font-weight: 600;
   color: #fff;
   background-color: #F5A623;
@@ -2105,7 +2111,8 @@ th {
 }
 @media screen and (min-width: 768px), print {
   .p-flow__number {
-    padding: 1.1875rem 0;
+    padding: 0;
+    height: 4rem;
   }
 }
 
@@ -2144,7 +2151,8 @@ th {
   border-right: 1px solid #c3c3c3;
   height: 29px;
   height: 1.8125rem;
-  right: 0;
+  right: -12px;
+  right: -0.75rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2157,7 +2165,7 @@ th {
 @media screen and (min-width: 768px), print {
   .p-flow__text {
     margin-top: 0;
-    margin-left: 3.3125rem;
+    margin-left: 4.125rem;
     position: relative;
   }
 }
@@ -2369,7 +2377,8 @@ th {
           align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 25px;
+  padding: 0 10px 0 14px;
+  padding: 0 0.625rem 0 0.875rem;
 }
 
 .p-header__menu {
@@ -2405,12 +2414,12 @@ th {
   display: -ms-flexbox;
   display: flex;
   height: inherit;
+  margin-left: 28px;
+  margin-left: 1.75rem;
 }
 
 .p-header__item {
   font-weight: 600;
-  margin-left: 28px;
-  margin-left: 1.75rem;
   height: inherit;
 }
 .p-header__item a {
@@ -2421,6 +2430,11 @@ th {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+}
+
+.p-header__item:not(:first-child) {
+  margin-left: 28px;
+  margin-left: 1.75rem;
 }
 
 .p-header__info {
@@ -2439,14 +2453,13 @@ th {
 }
 
 .p-header__tel-info {
-  margin-left: 10px;
-  margin-left: 0.625rem;
   line-height: 1;
 }
 
 .p-header__time {
   font-size: 12px;
   font-size: 0.75rem;
+  text-align: right;
 }
 
 .p-header__tel {
@@ -2476,8 +2489,8 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 14px;
-  margin-left: 0.875rem;
+  margin-left: 19px;
+  margin-left: 1.1875rem;
 }
 
 .p-header__contact {
@@ -2626,10 +2639,10 @@ th {
 .p-mv__inner {
   text-align: center;
   color: #fff;
-  padding-top: 90px;
-  padding-top: 5.625rem;
-  padding-bottom: 76px;
-  padding-bottom: 4.75rem;
+  padding-top: 99px;
+  padding-top: 6.1875rem;
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 
 .p-mv__title {
@@ -2646,8 +2659,8 @@ th {
 .p-mv__text {
   font-size: 18px;
   font-size: 1.125rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
+  margin-top: 7px;
+  margin-top: 0.4375rem;
   line-height: 1.72;
 }
 
@@ -2840,8 +2853,8 @@ th {
 }
 
 .p-price__content {
-  padding: 55px 20px 47px;
-  padding: 3.4375rem 1.25rem 2.9375rem;
+  padding: 55px 20px 50px;
+  padding: 3.4375rem 1.25rem 3.125rem;
 }
 
 .p-price__title {
@@ -2860,8 +2873,8 @@ th {
 }
 
 .p-price__button {
-  margin-top: 18px;
-  margin-top: 1.125rem;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .p-question__items {

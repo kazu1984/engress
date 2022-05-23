@@ -9,21 +9,22 @@
 
 .p-copy__inner {
   text-align: center;
-  padding-top: rem(63);
+  padding-top: rem(50);
   padding-bottom: rem(54);
 }
 
 .p-copy__worries {
-  margin-top: rem(65);
+  margin-top: rem(40);
   color: $color-base-font-second;
   @include mq("md") {
+    margin-left: rem(-26);
     display: flex;
     justify-content: center;
   }
 }
 
 .p-copy__worry {
-  margin-top: rem(15);
+  font-size: rem(18);
   line-height: 2.16;
   br {
     display: none;
@@ -34,6 +35,8 @@
     }
   }
 }
+
+
 
 .p-copy__worry:nth-child(2) {
   margin-left: 0;
@@ -50,13 +53,13 @@
 }
 
 .p-copy__box {
-  margin-top: rem(83);
+  margin-top: rem(72);
   padding: rem(11) rem(16);
   background-color: $color-base-background;
 }
 
 .p-copy__box-inner {
-  padding: rem(20);
+  padding: rem(10) rem(10) rem(22) rem(10); 
   border: 5px solid $blue;
 }
 
@@ -77,5 +80,5 @@
 .p-copy__box-text {
   font-size: rem(18);
   line-height: 1.72;
-  margin-top: rem(25);
+  margin-top: rem(22);
 }

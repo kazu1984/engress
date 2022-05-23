@@ -227,7 +227,12 @@ function my_query($query)
 
   $post_per_page = 10;
   $query->set('posts_per_page', $post_per_page);
-
+  $query->set('ignore_sticky_posts', 1);
+  
+  if ($query->is_front_page()) {
+    $query->set('posts_per_page', 3);
+  }
+  
   // if ($query->is_post_type_archive('news')) {
   //   $query->set('post_type', 'news');
   //   $query->set('posts_per_page', $post_per_page);
