@@ -1,0 +1,24 @@
+@use "setting" as *;
+
+.p-404 {
+  text-align: center;
+}
+
+.p-404__title {
+  font-size: rem(38);
+  font-weight: $bold;
+  span {
+    display: inline-block;
+  }
+  @include mq("md") {
+    font-size: rem(60);
+  }
+}
+
+.p-404__text {
+  margin-top: rem(50);
+}
+
+.p-404__button {
+  margin-top: rem(50);
+}

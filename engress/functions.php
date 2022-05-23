@@ -238,7 +238,8 @@ function my_query($query)
 add_filter('pre_get_posts', 'my_query');
 
 /**
- * パンくず
+ * パンくず 
+ * ブログ一覧で「カテゴリー」の前に「ブログ」を追加
  */
 function bcn_news_insert($bcnObj)
 {
@@ -248,7 +249,7 @@ function bcn_news_insert($bcnObj)
     $trail_tmp_home = clone $bcnObj->trail[2];
     // ホーム
     $bcnObj->trail[3] = $trail_tmp_home;
-    // // ブログ
+    // ブログ
     $bcnObj->trail[2] = clone $bcnObj->trail[0];
     $bcnObj->trail[2]->set_title('ブログ');
     $bcnObj->trail[2]->set_url(home_url('blog'));
