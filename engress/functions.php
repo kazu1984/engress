@@ -225,7 +225,7 @@ function my_query($query)
     return;
   }
 
-  $post_per_page = 2;
+  $post_per_page = 10;
   $query->set('posts_per_page', $post_per_page);
 
   // if ($query->is_post_type_archive('news')) {
@@ -237,4 +237,27 @@ function my_query($query)
 }
 add_filter('pre_get_posts', 'my_query');
 
+/**
+ * パンくず
+ */
+function bcn_news_insert($bcnObj)
+{
 
+  if (get_post_type() == 'post' && !is_category()) {
+    $trail_tmp_cat = clone $bcnObj->trail[1];
+    $trail_tmp_home = clone $bcnObj->trail[2];
+    // ホーム
+    $bcnObj->trail[3] = $trail_tmp_home;
+    // // ブログ
+    $bcnObj->trail[2] = clone $bcnObj->trail[0];
+    $bcnObj->trail[2]->set_title('ブログ');
+    $bcnObj->trail[2]->set_url(home_url('blog'));
+    $bcnObj->trail[2]->set_linked(true);
+    // カテゴリ
+    $bcnObj->trail[1] = $trail_tmp_cat;
+    // タイトル
+    $bcnObj->trail[0] = clone $bcnObj->trail[0];
+  }
+  return $bcnObj;
+}
+add_action('bcn_after_fill', 'bcn_news_insert');

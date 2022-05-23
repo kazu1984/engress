@@ -15,8 +15,10 @@
     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
     $args = array(
       'post_type' => 'post',
-      'posts_per_page' => 3,
+      'posts_per_page' => 2,
       'paged' => $paged,
+      'orderby'  => 'date',
+      'order' => 'DESC',  
       'ignore_sticky_posts' => 1,
     );
     $query = new WP_Query($args);
