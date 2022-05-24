@@ -4,7 +4,7 @@
   display: flex;
   gap: rem(6);
   text-align: center;
-  margin-top: rem(106);
+  margin-top: rem(94);
 }
 
 .p-fee-list__item {
@@ -41,8 +41,8 @@
 .p-fee-list__body {
   border: 0.5px solid rgba($color-base-background-second, 0.5);
   border-top: none;
-  padding-top: rem(30);
-  padding-bottom: rem(95);
+  padding-top: rem(24);
+  padding-bottom: rem(88);
   flex-grow: 1;
 }
 
@@ -51,9 +51,13 @@
   font-weight: $bold;
 }
 
+.p-fee-list__price--pickup {
+  color: $color-list-pickup;
+}
+
 .p-fee-list__benefits {
   text-align: left;
-  margin-top: rem(48);
+  margin-top: rem(41);
   max-inline-size: max-content;
   margin-inline: auto;
   padding: 0 rem(20) 0 rem(40);
@@ -85,5 +89,5 @@
 
 
 .p-fee-list__benefit + .p-fee-list__benefit {
-  margin-top: rem(17);
+  margin-top: rem(8);
 }

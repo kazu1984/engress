@@ -1,12 +1,12 @@
 @use "setting" as *;
 
 .p-fee-system__box {
-  margin-top: rem(60);
+  margin-top: rem(49);
   text-align: center;
   @include mq("md") {
     display: flex;
     align-items: center;
-    padding: 0 rem(120);
+    padding: 0 rem(116);
   }
 }
 
@@ -51,8 +51,7 @@
 
 .p-fee-system__text {
   margin-top: rem(57);
-  letter-spacing: 0.01em;
   @include mq("md") {
-    margin-top: rem(46);
+    margin-top: rem(41);
   }
 }

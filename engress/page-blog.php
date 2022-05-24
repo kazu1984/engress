@@ -10,7 +10,7 @@
 
   <div class="l-content l-inner">
 
-    <h2 class="c-section-title">新着一覧</h2>
+    <h2 class="c-section-title c-section-title--small">新着一覧</h2>
     <?php
     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
     $args = array(

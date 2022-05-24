@@ -10,7 +10,7 @@
 
   <div class="l-content l-inner">
 
-    <h2 class="c-section-title">お知らせ一覧</h2>
+    <h2 class="c-section-title c-section-title--small">お知らせ一覧</h2>
 
     <?php if (have_posts()) : ?>
       <ul class="l-news-list p-news-list">
