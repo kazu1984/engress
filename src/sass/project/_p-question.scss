@@ -1,7 +1,7 @@
 @use "setting" as *;
 
 .p-question__items {
-  margin-top: rem(33);
+  margin-top: rem(18);
 }
 
 .p-question__item {
@@ -16,7 +16,7 @@
   position: relative;
   padding-top: rem(25);
   padding-right: rem(60);
-  padding-bottom: rem(25);
+  padding-bottom: rem(20);
   cursor: pointer;
   user-select: none;
 }
@@ -29,7 +29,7 @@
   background-color: $color-question-border;
   width: rem(25);
   height: rem(3);
-  top: 50%;
+  top: 47%;
   right: rem(20);
 }
 
@@ -54,8 +54,8 @@
 }
 
 .p-question__answer.is_open {
-  margin-bottom: rem(15);
-  padding: rem(23) rem(26);
+  margin-bottom: rem(10);
+  padding: rem(17) rem(26) rem(21);
   max-height: calc(var(--max-height) + 200px);
   opacity: 1;
 }

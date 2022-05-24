@@ -7,7 +7,7 @@
 }
 
 .p-post__items {
-  margin-top: rem(30);
+  margin-top: rem(25);
 }
 
 .p-post__item + .p-post__item {
@@ -20,13 +20,21 @@
   }
 }
 
-.p-post__info {
+.p-post__news {
   margin-top: rem(90);
   @include mq("md") {
     margin-top: 0;
     margin-left: auto;
-    width: 47.7777%;
+    width: 44.7777%;
   }
+}
+
+.p-post__news-items {
+  margin-top: rem(17);
+}
+
+.p-post__news-item + .p-post__news-item {
+  margin-top: rem(47);
 }
 
 .p-post__message {
