@@ -39,6 +39,10 @@
 
   </div>
 
+  <div class="l-news-cta">
+    <?php get_template_part('template-parts/template-cta', null); ?>
+  </div>
+
 </main>
 
 <?php get_footer(); ?>

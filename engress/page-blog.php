@@ -18,7 +18,7 @@
       'posts_per_page' => 2,
       'paged' => $paged,
       'orderby'  => 'date',
-      'order' => 'DESC',  
+      'order' => 'DESC',
       'ignore_sticky_posts' => 1,
     );
     $query = new WP_Query($args);
@@ -58,6 +58,10 @@
 
     <?php wp_reset_postdata(); ?>
 
+  </div>
+
+  <div class="l-blog-cta">
+    <?php get_template_part('template-parts/template-cta', null); ?>
   </div>
 
 </main>

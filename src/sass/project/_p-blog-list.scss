@@ -7,3 +7,14 @@
 .p-blog-list__message {
   margin-top: rem(60);
 }
+
+.p-media-blog__body {
+  margin-top: rem(15);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.p-media-blog__date {
+  font-size: rem(16);
+}

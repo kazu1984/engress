@@ -11,7 +11,9 @@
 }
 
 .p-media-pickup__body {
+  margin-top: rem(15);
   @include mq("sm") {
+    margin-top: 0;
     padding-left: rem(32);
   }
 }

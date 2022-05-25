@@ -688,6 +688,11 @@ th {
   margin-top: 12.5rem;
 }
 
+.l-blog-cta {
+  margin-top: 45px;
+  margin-top: 2.8125rem;
+}
+
 .l-blog-list {
   margin-top: 60px;
   margin-top: 3.75rem;
@@ -789,6 +794,11 @@ th {
   margin-top: 5rem;
 }
 
+.l-news-cta {
+  margin-top: 46px;
+  margin-top: 2.875rem;
+}
+
 .l-news-list {
   margin-top: 45px;
   margin-top: 2.8125rem;
@@ -800,8 +810,8 @@ th {
 }
 
 .l-plan-cta {
-  margin-top: 61px;
-  margin-top: 3.8125rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .l-post {
@@ -817,6 +827,11 @@ th {
 .l-question {
   margin-top: 62px;
   margin-top: 3.875rem;
+}
+
+.l-single-cta {
+  margin-top: 46px;
+  margin-top: 2.875rem;
 }
 
 .l-tel-contact {
@@ -1397,6 +1412,21 @@ th {
 .p-blog-list__message {
   margin-top: 60px;
   margin-top: 3.75rem;
+}
+
+.p-media-blog__body {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+}
+@media screen and (min-width: 768px), print {
+  .p-media-blog__body {
+    margin-top: 0;
+  }
+}
+
+.p-media-blog__date {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .p-breadcrumb {
@@ -2577,8 +2607,13 @@ th {
   padding-top: 60.9523%;
 }
 
+.p-media-pickup__body {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+}
 @media screen and (min-width: 600px), print {
   .p-media-pickup__body {
+    margin-top: 0;
     padding-left: 2rem;
   }
 }
