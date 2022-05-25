@@ -46,6 +46,14 @@
   text-decoration: underline;
 }
 
+.c-content img {
+  max-width: 100%;
+}
+
+.c-content iframe {
+  width: 100%;
+}
+
 .c-content pre {
   white-space: pre-wrap;
 }
@@ -56,7 +64,7 @@
 
 .c-content blockquote {
   position: relative;
-  background-color: #f8f8f8;
+  background-color: $color-post-block;
   display: table;
   line-height: 1.5;
   padding: rem(27) rem(26) rem(32) rem(74);
@@ -65,7 +73,7 @@
 .c-content blockquote::before {
   position: absolute;
   content: "“";
-  color: #b4b4b4;
+  color: $color-post-block-mark;
   font-size: rem(85);
   top: 0;
   left: 3%;
@@ -112,6 +120,11 @@
   content: counter(item) ".";
 }
 
+.c-content pre {
+  background-color: $color-post-block;
+  padding: rem(10);
+}
+
 .c-content input[type="password"] {
   border: 1px solid $color-base-font;
 }
@@ -120,4 +133,21 @@
   background-color: $orange;
   color: $color-base-font-second;
   padding: rem(5);;
+}
+
+.c-content table {
+  font-size: rem(14);
+  border: 1px solid $color-post-block-mark;
+  border-collapse: collapse;
+  width: 100%
+}
+
+.c-content table td, .c-content table th {
+  border: 1px solid $color-post-block-mark;
+  padding: .8em
+}
+
+.c-content hr {
+  background-color: $color-post-block-mark;
+  margin: rem(40) 0
 }

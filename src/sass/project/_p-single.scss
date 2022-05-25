@@ -36,6 +36,9 @@
   font-weight: $bold;
   margin-top: rem(31);
   line-height: 1.5;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
   @include mq("md") {
     font-size: rem(28);
   }
@@ -50,8 +53,10 @@
 }
 
 .p-single__sns-items {
-  display: flex;
-  align-items: flex-start;
+  @include mq("sss") {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .p-single__twitter .twitter-share-button {
@@ -98,7 +103,8 @@
 }
 
 .p-single__content > *:not(:first-child) {
-  margin-top: rem(30);
+  margin-top: rem(40);
+  margin-bottom: rem(20);
 }
 
 .p-single__bottom {

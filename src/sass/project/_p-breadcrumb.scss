@@ -10,3 +10,9 @@
   font-size: rem(12);
   line-height: 1;
 }
+
+.p-breadcrumb span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}

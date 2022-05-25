@@ -1,5 +1,6 @@
 //ブレイクポイント
 $breakpoints: (
+  sss: 300,
   ss: 400,
   sm: 600,
   md: 768,
@@ -9,6 +10,7 @@ $breakpoints: (
 
 //メディアクエリー
 $mediaquerys: (
+  sss: "screen and (min-width: #{map-get($breakpoints,'sss')}px),print",
   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px),print",
   md: "screen and (min-width: #{map-get($breakpoints,'md')}px),print",
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px),print",
