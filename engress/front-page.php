@@ -63,7 +63,6 @@
             <p class="p-feature__text">Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。</p>
           </div>
           <figure class="p-feature__img">
-            <!-- <img src="https://placehold.jp/3d4070/ffffff/550x1500.png" alt=""> -->
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/top/feature03.jpg" alt="engressの特徴画像">
           </figure>
         </li>

@@ -899,6 +899,9 @@ th {
   background-color: #F5A623;
   border-radius: 5px;
   line-height: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .c-button--blue {
@@ -2225,17 +2228,17 @@ th {
   }
 }
 
-.p-flow__title::after {
-  position: absolute;
-  content: "";
-  border-right: 1px solid #c3c3c3;
-  height: 29px;
-  height: 1.8125rem;
-  right: -12px;
-  right: -0.75rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+@media screen and (min-width: 768px), print {
+  .p-flow__title::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #c3c3c3;
+    height: 1.8125rem;
+    right: -0.75rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .p-flow__text {

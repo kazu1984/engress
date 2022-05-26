@@ -51,13 +51,15 @@
 }
 
 .p-flow__title::after {
-  position: absolute;
-  content: "";
-  border-right: 1px solid $color-flow-line;
-  height: rem(29);
-  right: rem(-12);
-  top: 50%;
-  transform: translateY(-50%);
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    border-right: 1px solid $color-flow-line;
+    height: rem(29);
+    right: rem(-12);
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .p-flow__text {

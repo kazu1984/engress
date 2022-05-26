@@ -35,10 +35,10 @@ function my_script_init()
   wp_enqueue_script('scroll-hint', '//unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js', array(), '1.0.1', true);
 
   // js
-  wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/common.js?20220101', array('jquery'), '1.0.1', true);
+  wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/common.js?v=' . date_i18n('Ymd_His'), array('jquery'), '1.0.1', true);
 
   // css
-  wp_enqueue_style('style-name', get_template_directory_uri() . '/assets/css/styles.css?20220101', array(), '1.0.1', false);
+  wp_enqueue_style('style-name', get_template_directory_uri() . '/assets/css/styles.css?v=' . date_i18n('Ymd_His'), array(), '1.0.1', false);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
@@ -228,11 +228,11 @@ function my_query($query)
   $post_per_page = 10;
   $query->set('posts_per_page', $post_per_page);
   $query->set('ignore_sticky_posts', 1);
-  
+
   if ($query->is_front_page()) {
     $query->set('posts_per_page', 3);
   }
-  
+
   // if ($query->is_post_type_archive('news')) {
   //   $query->set('post_type', 'news');
   //   $query->set('posts_per_page', $post_per_page);

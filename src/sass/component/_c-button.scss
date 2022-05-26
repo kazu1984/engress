@@ -10,6 +10,9 @@
   background-color: $color-button-background;
   border-radius: 5px;
   line-height: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .c-button--blue {
