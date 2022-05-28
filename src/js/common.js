@@ -3,14 +3,14 @@ jQuery(function ($) {
   // 横スクロール発見用
   // 提出時は消去
   //------------------------------------------
-  var w = $(window).innerWidth();
-  console.log("画面幅は..." + w);
-  $("*").each(function (index, element) {
-    // $(element).attr("style", "outline:1px solid red");
-    if (w < $(element).innerWidth()) {
-      console.log(element);
-    }
-  });
+  // var w = $(window).innerWidth();
+  // console.log("画面幅は..." + w);
+  // $("*").each(function (index, element) {
+  //   // $(element).attr("style", "outline:1px solid red");
+  //   if (w < $(element).innerWidth()) {
+  //     console.log(element);
+  //   }
+  // });
   // -----------------------------------------
   // -----------------------------------------
   // -----------------------------------------
