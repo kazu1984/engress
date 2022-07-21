@@ -21,7 +21,7 @@
   <meta property="twitter:url" content="<?php echo home_url(); ?>">
   <meta property="twitter:title" content="<?php echo bloginfo('title') ?>">
   <meta property="twitter:description" content="<?php echo bloginfo('description') ?>">
-  <meta property="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/common//meta.png">
+  <meta property="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/common/meta.png">
 
   <?php wp_head(); ?>
 </head>
